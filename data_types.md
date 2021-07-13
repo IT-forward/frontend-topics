@@ -1,10 +1,10 @@
 <h1>Ma'lumotlar turlari (Data types) </h1>
 <img src="https://i.ibb.co/YkPGqK9/assja.jpg" />
 <h3>Dasturlashda ma'lumotlar turlari muhim tushuncha hisoblanadi.
-O'zgaruvchilar ustida ishlashni ta'minlash uchun uning turi haqida biron bir narsani bilishimiz muhimdir.Ma'lumotlar turlarisiz kompyuter buni xavfsiz hal qila olmaydi.
+O'zgaruvchilar ustida ishlashni ta'minlash uchun uning turi haqida biror bir narsani bilishimiz muhimdir.Ma'lumotlar turlarisiz kompyuter buni xavfsiz hal qila olmaydi.
 </h3>
-![Без названия](https://user-images.githubusercontent.com/75212715/125463848-f2099b39-38a7-4b8f-9dfe-7dad1c2f8d6c.jpg)
-Ko'rib turganingizdek data type lar 2 turga bo'linadi : Primitive va Non-primitive <br/>
-Primitiv tiplarga quyidagilar kiradi : Number, String, Boolean, Null, Undefined, Symbol va BigInt;
-Non-primitive tiplarga quyidagilar kiradi: Object;
-JavaScript dinamik tiplarga ega dasturlash tili hisoblanadi
+<img src="https://i.ibb.co/54h84xX/image.jpg" />
+<h4>Ko'rib turganingizdek data type lar 2 turga bo'linadi : Primitive va Non-primitive <br/>
+Primitiv tiplarga quyidagilar kiradi : Number, String, Boolean, Null, Undefined, Symbol va BigInt; <br/>
+Non-primitive tiplarga quyidagilar kiradi: Object;  <br/>
+JavaScript dinamik tiplarga ega dasturlash tili hisoblanadi.   </h4>
