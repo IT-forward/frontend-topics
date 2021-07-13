@@ -1,5 +1,5 @@
 <h1>Ma'lumotlar turlari (Data types) </h1>
-<img src="https://ibb.co/J7mPMbL" />
+<img src="https://i.ibb.co/YkPGqK9/assja.jpg" />
 <h3>Dasturlashda ma'lumotlar turlari muhim tushuncha hisoblanadi.
 O'zgaruvchilar ustida ishlashni ta'minlash uchun uning turi haqida biron bir narsani bilishimiz muhimdir.Ma'lumotlar turlarisiz kompyuter buni xavfsiz hal qila olmaydi.
 </h3>
