@@ -7,11 +7,11 @@
 </pre>
 <img src="https://i.ibb.co/54h84xX/image.jpg" />
 <p>
-  Ko'rib turganingizdek ma'lumot turlari(data type) 2 turga bo'linadi :
-  1. **Primitive**
-  2. **Non-primitive**
+  Ko'rib turganingizdek ma'lumot turlari(data type) 2 turga bo'linadi : <br/>
+  1.<b>Primitive</b>
+  2.<b>Non-primitive</b>
   <br />
- ***Primitiv*** tiplarga quyidagilar kiradi :
+ Primitiv*** tiplarga quyidagilar kiradi :
   <code>Number, String, Boolean, Null, Undefined, Symbol va BigInt</code>;
   <br />
   <strong><i>Non-primitive</i></strong> tiplarga quyidagilar kiradi:
