@@ -37,7 +37,15 @@ Buning uchun JavaScriptda mantiqiy ma'lumotlar(Boolean) turi mavjud. Bu faqat ro
 <br/>
 <code>Boolean()</code> funktsiyadan ifodaning (yoki o'zgaruvchining) to'g'riligini bilish uchun  foydalanishingiz mumkin: <code>console.log(Boolean(6 > 5)) </code>. Natija <code>rost(true)</code> chiqadi.
        <h3>Null</h3> 
-   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi natus corrupti temporibus, saepe ratione eius libero tenetur non numquam totam.
+  Null turi to'liq bitta qiymatga ega: null. , <br/>
+  <code>null</code> ikkita xususiyatni tushunishi kerak: 
+<pre>
+- null bo'sh yoki mavjud bo'lmagan qiymatdir.
+- null tayinlanishi kerak bo'lgan qiymatdir.
+let a = null;
+console.log(a);
+// null
+</pre>
        <h3>Undefined</h3> 
   JavaScriptda qiymati bo'lmagan o'zgaruvchining qiymati <code>undefined</code> ga teng. Turi ham undefined. Misol: <br/>
   <pre>
@@ -56,6 +64,27 @@ Buning uchun JavaScriptda mantiqiy ma'lumotlar(Boolean) turi mavjud. Bu faqat ro
   // 9007199254740992n
 </pre>
 BigInt bilan <code>+</code>,<code>*</code>,<code>-</code>,<code>**</code> va <code>%</code> operatorlaridan foydalanishingiz mumkin - xuddi Sonlar(Numbers) kabi.BigInt mantiqiy(boolean) shaklga o'tkaziladigan holatlarda o'zini raqam(number) kabi tutadi: <code>if</code>, <code>||</code>, <code>&&</code>, <code>Boolean</code>,<code>!</code>.
+<h3>Null va Undefined orasidagi farq</h3>
+JavaScriptda <code>undefined</code> o'zgaruvchining e'lon qilinganligini anglatadi, ammo hali unga qiymat berilmagan, masalan: <br/>
+<pre>
+var testVar;
+console.log(testVar);            // undefined
+console.log(typeof testVar);     // undefined
+</pre>
+<code>null</code> esa tayinlash qiymati. U o'zgaruvchiga bo'sh qiymatning ifodasi sifatida berilishi mumkin:  <br/>
+<pre>
+var testVar = null;
+console.log(testVar);            // null
+console.log(typeof testVar);     // object
+</pre>
+Oldingi misollardan ko'rinib turibdiki undefined a null lar ikki xil turga ega: undefined bu tip o'zi (aniqlanmagan) esa null ob'ektdir.
+<pre>
+console.log(null === undefined)     // false
+console.log(null == undefined)      // true
+console.log(null === null)          // true
+console.log(null = 'value')        // ReferenceError
+console.log(undefined = 'value')     // 'value'
+</pre>
        <h3>Operator typeof</h3>
   <code>typeof</code> - JavaScript o'zgaruvchisining turini topish uchun foydalanishingiz mumkin. </br>
 <pre>
