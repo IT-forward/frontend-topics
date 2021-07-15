@@ -21,7 +21,7 @@
   qiymatni qo’sha olmaymiz. <br> 
   Keling bularni birin-ketinlik bilan ko'rib chiqamiz!
 
-##Number
+#Number
    Number -  64 bitli ikkilik formatdagi IEEE 754 ning qiymati (- (2 ^ 53 - 1) va 2 ^ 53 - 1 orasidagi sonlar).
        Sonlar turi quyidagi 3 ta ko'rinishga ega bo'ladi: <code>+ Infinity, -Infinity va NaN ("Raqam emas").</code>
        <h3>String</h3> 
