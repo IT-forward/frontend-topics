@@ -55,7 +55,15 @@ console.log(a);
   Biz computer degan o'zgaruvchi yaratdik va bu o'zgaruvchining qiymati yo'q.Shuning uchun natija undefined ga teng bo'ladi.
 </pre>
    <h3>Symbol</h3> 
-   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur reiciendis suscipit voluptates! Ea, eius quod quibusdam sequi doloribus voluptas!
+  Ma'lumotlar turi Belgi (Symbol) bo'lgan qiymatni "Belgi qiymat(Symbol value)" deb atash mumkin. JavaScriptning ishlash vaqti muhitida belgi qiymati Symbol funktsiyasini chaqirish orqali hosil bo'ladi, va bu funksiya noma'lum, noyob qiymatni dinamik ravishda ishlab chiqaradi. Belgi(Symbol)- ob'ekt xususiyati sifatida ishlatilishi mumkin.
+Belgi ixtiyoriy tavsifga ega bo'lishi mumkin, lekin faqat dasturdagi xatoliklarni bartaraf etish maqsadida.Belgi qiymati noyob identifikatorni ifodalaydi. 
+<pre>
+let Sym1 = Symbol("Sym")
+let Sym2 = Symbol("Sym")
+console.log(Sym1 === Sym2);
+// false
+Agar biz bir xil tavsifga ega bo'lgan ko'plab belgilarni yaratadigan bo'lsak ham, ular har xil qiymatlardir.
+</pre>
    <h3>BigInt</h3> 
   BigInt turi JavaScriptdagi raqamli primitive bo'lib, u butun sonlarni aniqlik bilan ko'rsatishi mumkin. BigInt yordamida butun son chegarasidan tashqarida ham katta butun sonlarni ishlatishingiz mumkin.BigInt butun sonning oxiriga n qo'shib yoki konstruktorni chaqirish orqali hosil bo'ladi. Misol: <br/>
   <pre>
