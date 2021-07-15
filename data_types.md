@@ -45,6 +45,18 @@ Buning uchun JavaScriptda mantiqiy ma'lumotlar(Boolean) turi mavjud. Bu faqat ro
    <h3>BigInt</h3> 
    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur reiciendis suscipit voluptates! Ea, eius quod quibusdam sequi doloribus voluptas!
        <h3>Operator typeof</h3>
-  <code>typeof</code> - JavaScript o'zgaruvchisining turini topish uchun foydalanishingiz mumkin.
+  <code>typeof</code> - JavaScript o'zgaruvchisining turini topish uchun foydalanishingiz mumkin. </br>
+<pre>
+    console.log(typeof "Alisher")                 // Natija "string"
+    console.log(typeof 7.89)                      // Natija "number"
+    console.log(typeof NaN)                       // Natija "number"
+    console.log(typeof true)                      // Natija "boolean"
+    console.log(typeof [5,6,7,4])                 // Natija "object"
+    console.log(typeof {name:'Ali', age:25})      // Natija "object"
+    console.log(typeof new Date())                // Natija "object"
+    console.log(typeof function () {})            // Natija "function"
+    console.log(typeof myCar)                     // Natija "undefined" 
+    console.log(typeof null)                      // Natija "object"
+</pre>
 
  
