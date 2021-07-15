@@ -39,7 +39,13 @@ Buning uchun JavaScriptda mantiqiy ma'lumotlar(Boolean) turi mavjud. Bu faqat ro
        <h3>Null</h3> 
    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi natus corrupti temporibus, saepe ratione eius libero tenetur non numquam totam.
        <h3>Undefined</h3> 
-   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur reiciendis suscipit voluptates! Ea, eius quod quibusdam sequi doloribus voluptas!
+  JavaScriptda qiymati bo'lmagan o'zgaruvchining qiymati <code>undefined</code> ga teng. Turi ham undefined. Misol: <br/>
+  <pre>
+  let computer;
+  console.log(computer);
+  // Undefined
+  Biz computer degan o'zgaruvchi yaratdik va bu o'zgaruvchining qiymati yo'q.Shuning uchun natija undefined ga teng bo'ladi.
+</pre>
    <h3>Symbol</h3> 
    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur reiciendis suscipit voluptates! Ea, eius quod quibusdam sequi doloribus voluptas!
    <h3>BigInt</h3> 
@@ -56,7 +62,7 @@ Buning uchun JavaScriptda mantiqiy ma'lumotlar(Boolean) turi mavjud. Bu faqat ro
     console.log(typeof new Date())                // Natija "object"
     console.log(typeof function () {})            // Natija "function"
     console.log(typeof myCar)                     // Natija "undefined" 
-    console.log(typeof null)                      // Natija "object"
+    console.log(typeof null)                      // Natija "object";   null o'zini tipiga mansub bo'lsada, JavaScript bu holatda "object" qaytaradi.
 </pre>
 
  
