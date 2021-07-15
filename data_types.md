@@ -1,13 +1,13 @@
-<h1>Ma'lumotlar turlari (Data types)</h1>
+# Ma'lumotlar turlari (Data types)
 <img src="https://i.ibb.co/YkPGqK9/assja.jpg" />
-<p>
+<pre>
   Dasturlashda ma'lumotlar turlari muhim tushuncha hisoblanadi. O'zgaruvchilar
   ustida ishlashni ta'minlash uchun uning turi haqida ma'lumotga ega bo'lishimiz
   muhimdir.Ma'lumotlar turlarisiz kompyuter buni xavfsiz hal qila olmaydi.
-</p>
+</pre>
 <img src="https://i.ibb.co/54h84xX/image.jpg" />
 <p>
-  Ko'rib turganingizdek data type lar 2 turga bo'linadi :
+  Ko'rib turganingizdek ma'lumot turlari(data type) 2 turga bo'linadi :
   <strong><i>Primitiv</i></strong> va <strong><i>Non-primitive</i></strong>
   <br />
   <strong><i>Primitiv</i></strong> tiplarga quyidagilar kiradi :
