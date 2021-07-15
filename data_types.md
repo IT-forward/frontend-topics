@@ -6,23 +6,22 @@
   muhimdir.Ma'lumotlar turlarisiz kompyuter buni xavfsiz hal qila olmaydi.
 </pre>
 <img src="https://i.ibb.co/54h84xX/image.jpg" />
-<p>
   Ko'rib turganingizdek ma'lumot turlari(data type) 2 turga bo'linadi : <br/>
-  1.<b>Primitive</b>
+  1.<b>Primitive</b>  <br/>
   2.<b>Non-primitive</b>
   <br />
- Primitiv*** tiplarga quyidagilar kiradi :
+  <b>Primitiv</b> tiplarga quyidagilar kiradi :
   <code>Number, String, Boolean, Null, Undefined, Symbol va BigInt</code>;
   <br />
-  <strong><i>Non-primitive</i></strong> tiplarga quyidagilar kiradi:
+  <b>Non-primitive</b> tiplarga quyidagilar kiradi:
   <code>Object</code>;
   <br />
-  <strong><i>Primitiv</i></strong>
+  <b>Primitiv</b>
   tiplarning barchasi faqatgina yagona qiymatni qabul qiladi va ularga ikkinchi
   qiymatni qo’sha olmaymiz. <br> 
   Keling bularni birin-ketinlik bilan ko'rib chiqamiz!
 
-  <h3>Number</h3> 
+##Number
    Number -  64 bitli ikkilik formatdagi IEEE 754 ning qiymati (- (2 ^ 53 - 1) va 2 ^ 53 - 1 orasidagi sonlar).
        Sonlar turi quyidagi 3 ta ko'rinishga ega bo'ladi: <code>+ Infinity, -Infinity va NaN ("Raqam emas").</code>
        <h3>String</h3> 
@@ -40,4 +39,4 @@
        <h3>Operator typeof</h3>
   <code>typeof</code> - JavaScript o'zgaruvchisining turini topish uchun foydalanishingiz mumkin.
 
-    </p>
+ 
