@@ -8,7 +8,8 @@
 <img src="https://i.ibb.co/54h84xX/image.jpg" />
 <p>
   Ko'rib turganingizdek ma'lumot turlari(data type) 2 turga bo'linadi :
-  ***Primitiv*** va ***Non-primitive***
+  1. **Primitive**
+  2. **Non-primitive**
   <br />
  ***Primitiv*** tiplarga quyidagilar kiradi :
   <code>Number, String, Boolean, Null, Undefined, Symbol va BigInt</code>;
