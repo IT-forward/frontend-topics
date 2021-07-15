@@ -25,7 +25,7 @@
    Number -  64 bitli ikkilik formatdagi IEEE 754 ning qiymati (- (2 ^ 53 - 1) va 2 ^ 53 - 1 orasidagi sonlar).
        Sonlar turi quyidagi 3 ta ko'rinishga ega bo'ladi: <code>+ Infinity, -Infinity va NaN ("Raqam emas").</code>
        <h3>String</h3> 
-      JavaScriptda matnli ma'lumotlarni ko'rsatish uchun string tip ishlatilinadi. Stringni quyidagi ko'rinishda yozishimiz mumkin : <code>"Salom Dunyo", 'Hello World'</code>. Matnli ma'lumotlarni stringga aylantirishimiz uchun <code>'' va ""</code> dan foydalanamiz.String uzunligi bu undagi elementlar sonidir. Misol <code>console.log('Hello World'.length)</code> mana shu string ning uzunligi 11 ga teng, ya'ni bunda elementlar soni hisoblanmoqda. <code>length</code> - mavjud stringni uzunligini qaytaradi.JavaScriptda string o'zgarmasdir. Bu shuni anglatadiki, bir marta yangi string yaratilsa uni o'zgartirish mumkin emas. 
+      JavaScriptda matnli ma'lumotlarni ko'rsatish uchun string tip ishlatilinadi. Stringni quyidagi ko'rinishda yozishimiz mumkin : <code>"Salom Dunyo", 'Hello World'</code>. Matnli ma'lumotlarni stringga aylantirishimiz uchun <code>''</code> va <code>""</code> dan foydalanamiz.String uzunligi bu undagi elementlar sonidir. Misol <code>console.log('Hello World'.length)</code> mana shu string ning uzunligi 11 ga teng, ya'ni bunda elementlar soni hisoblanmoqda. <code>length</code> - mavjud stringni uzunligini qaytaradi.JavaScriptda string o'zgarmasdir. Bu shuni anglatadiki, bir marta yangi string yaratilsa uni o'zgartirish mumkin emas. 
            <h3>Boolean</h3> 
    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse labore odio modi dolores illum quia vel nisi sapiente aliquam!
        <h3>Null</h3> 
