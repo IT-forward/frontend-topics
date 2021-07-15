@@ -25,9 +25,17 @@
    Number -  64 bitli ikkilik formatdagi IEEE 754 ning qiymati (- (2 ^ 53 - 1) va 2 ^ 53 - 1 orasidagi sonlar).
        Sonlar turi quyidagi 3 ta ko'rinishga ega bo'ladi: <code>+ Infinity, -Infinity va NaN ("Raqam emas").</code>
        <h3>String</h3> 
-      JavaScriptda matnli ma'lumotlarni ko'rsatish uchun string tip ishlatilinadi. Stringni quyidagi ko'rinishda yozishimiz mumkin : <code>"Salom Dunyo", 'Hello World'</code>. Matnli ma'lumotlarni stringga aylantirishimiz uchun <code>''</code> va <code>""</code> dan foydalanamiz.String uzunligi bu undagi elementlar sonidir. Misol <code>console.log('Hello World'.length)</code> mana shu string ning uzunligi 11 ga teng, ya'ni bunda elementlar soni hisoblanmoqda. <code>length</code> - mavjud stringni uzunligini qaytaradi.JavaScriptda string o'zgarmasdir. Bu shuni anglatadiki, bir marta yangi string yaratilsa uni o'zgartirish mumkin emas. 
+      JavaScriptda matnli ma'lumotlarni ko'rsatish uchun string turi ishlatilinadi. Stringni quyidagi ko'rinishda yozishimiz mumkin : <code>"Salom Dunyo", 'Hello World'</code>. Matnli ma'lumotlarni stringga aylantirishimiz uchun <code>''</code> va <code>""</code> dan foydalanamiz.String uzunligi bu undagi elementlar sonidir. Misol <code>console.log('Hello World'.length)</code> mana shu string ning uzunligi 11 ga teng, ya'ni bunda elementlar soni hisoblanmoqda. <code>length</code> - mavjud stringni uzunligini qaytaradi.JavaScriptda string o'zgarmasdir. Bu shuni anglatadiki, bir marta yangi string yaratilsa uni o'zgartirish mumkin emas. 
            <h3>Boolean</h3> 
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse labore odio modi dolores illum quia vel nisi sapiente aliquam!
+   Ko'pincha, dasturlashda sizga ikkita qiymatdan bittasiga ega bo'lishi mumkin bo'lgan ma'lumotlar turi kerak bo'ladi, masalan: <br/>
+<pre>
+  HA / YO'Q
+  ON / OFF
+  ROST / YOLG'ON
+</pre>
+Buning uchun JavaScriptda mantiqiy ma'lumotlar(Boolean) turi mavjud. Bu faqat rost(true) yoki yolg'on(false) qiymatlarni qabul qilishi mumkin .
+<br/>
+<code>Boolean()</code> funktsiyadan ifodaning (yoki o'zgaruvchining) to'g'riligini bilish uchun  foydalanishingiz mumkin: <code>console.log(Boolean(6 > 5)) </code>. Natija <code>rost(true)</code> chiqadi.
        <h3>Null</h3> 
    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi natus corrupti temporibus, saepe ratione eius libero tenetur non numquam totam.
        <h3>Undefined</h3> 
