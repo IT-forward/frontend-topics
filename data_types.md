@@ -49,7 +49,13 @@ Buning uchun JavaScriptda mantiqiy ma'lumotlar(Boolean) turi mavjud. Bu faqat ro
    <h3>Symbol</h3> 
    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur reiciendis suscipit voluptates! Ea, eius quod quibusdam sequi doloribus voluptas!
    <h3>BigInt</h3> 
-   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur reiciendis suscipit voluptates! Ea, eius quod quibusdam sequi doloribus voluptas!
+  BigInt turi JavaScriptdagi raqamli primitive bo'lib, u butun sonlarni aniqlik bilan ko'rsatishi mumkin. BigInt yordamida butun son chegarasidan tashqarida ham katta butun sonlarni ishlatishingiz mumkin.BigInt butun sonning oxiriga n qo'shib yoki konstruktorni chaqirish orqali hosil bo'ladi. Misol: <br/>
+  <pre>
+  const x = 2n ** 53n;
+  console.log(x);
+  // 9007199254740992n
+</pre>
+BigInt bilan <code>+</code>,<code>*</code>,<code>-</code>,<code>**</code> va <code>%</code> operatorlaridan foydalanishingiz mumkin - xuddi Sonlar(Numbers) kabi.BigInt mantiqiy(boolean) shaklga o'tkaziladigan holatlarda o'zini raqam(number) kabi tutadi: <code>if</code>, <code>||</code>, <code>&&</code>, <code>Boolean</code>,<code>!</code>.
        <h3>Operator typeof</h3>
   <code>typeof</code> - JavaScript o'zgaruvchisining turini topish uchun foydalanishingiz mumkin. </br>
 <pre>
