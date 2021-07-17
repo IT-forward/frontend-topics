@@ -6,19 +6,29 @@
   muhimdir.Ma'lumotlar turlarisiz kompyuter buni xavfsiz hal qila olmaydi.
 </pre>
 <img src="https://i.ibb.co/54h84xX/image.jpg" />
-  Ko'rib turganingizdek ma'lumot turlari(data type) 2 turga bo'linadi : <br/>
-  1.<b>Primitive</b>  <br/>
-  2.<b>Non-primitive</b>
-  <br />
-  <b>Primitiv</b> tiplarga quyidagilar kiradi :
+  Ko'rib turganingizdek ma'lumot turlari(data type) 2 turga bo'linadi : 
+  
+  
+  1. **Primitive**  
+
+
+  2. **Non-primitive**
+  
+  
+  
+  **Primitiv** tiplarga quyidagilar kiradi :
   <code>Number, String, Boolean, Null, Undefined, Symbol va BigInt</code>;
-  <br />
-  <b>Non-primitive</b> tiplarga quyidagilar kiradi:
+  
+  
+  
+  **Non-primitive** tiplarga quyidagilar kiradi:
   <code>Object</code>;
-  <br />
-  <b>Primitiv</b>
+  
+  **Primitiv**
   tiplarning barchasi faqatgina yagona qiymatni qabul qiladi va ularga ikkinchi
-  qiymatni qo’sha olmaymiz. <br> 
+  qiymatni qo’sha olmaymiz. 
+  
+  
   Keling bularni birin-ketinlik bilan ko'rib chiqamiz!
 
 <h3>Number</h3>
