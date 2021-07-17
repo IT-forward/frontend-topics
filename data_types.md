@@ -17,12 +17,12 @@
   
   
   **Primitiv** tiplarga quyidagilar kiradi :
-  <code>Number, String, Boolean, Null, Undefined, Symbol va BigInt</code>;
+  `Number, String, Boolean, Null, Undefined, Symbol va BigInt`;
   
   
   
   **Non-primitive** tiplarga quyidagilar kiradi:
-  <code>Object</code>;
+  `Object`;
   
   **Primitiv**
   tiplarning barchasi faqatgina yagona qiymatni qabul qiladi va ularga ikkinchi
@@ -31,24 +31,30 @@
   
   Keling bularni birin-ketinlik bilan ko'rib chiqamiz!
 
-<h3>Number</h3>
+### Number
    Number -  64 bitli ikkilik formatdagi IEEE 754 ning qiymati (- (2 ^ 53 - 1) va 2 ^ 53 - 1 orasidagi sonlar).
-       Sonlar turi quyidagi 3 ta ko'rinishga ega bo'ladi: <code>+ Infinity, -Infinity va NaN ("Raqam emas").</code>
-       <h3>String</h3> 
-      JavaScriptda matnli ma'lumotlarni ko'rsatish uchun string turi ishlatilinadi. Stringni quyidagi ko'rinishda yozishimiz mumkin : <code>"Salom Dunyo", 'Hello World'</code>. Matnli ma'lumotlarni stringga aylantirishimiz uchun <code>''</code> va <code>""</code> dan foydalanamiz.String uzunligi bu undagi elementlar sonidir. Misol <code>console.log('Hello World'.length)</code> mana shu string ning uzunligi 11 ga teng, ya'ni bunda elementlar soni hisoblanmoqda. <code>length</code> - mavjud stringni uzunligini qaytaradi.JavaScriptda string o'zgarmasdir. Bu shuni anglatadiki, bir marta yangi string yaratilsa uni o'zgartirish mumkin emas. 
-           <h3>Boolean</h3> 
-   Ko'pincha, dasturlashda sizga ikkita qiymatdan bittasiga ega bo'lishi mumkin bo'lgan ma'lumotlar turi kerak bo'ladi, masalan: <br/>
+       Sonlar turi quyidagi 3 ta ko'rinishga ega bo'ladi: `+ Infinity, -Infinity va NaN ("Raqam emas").`
+### String
+      JavaScriptda matnli ma'lumotlarni ko'rsatish uchun string turi ishlatilinadi. Stringni quyidagi ko'rinishda yozishimiz mumkin : `"Salom Dunyo", 'Hello World'`. Matnli ma'lumotlarni stringga aylantirishimiz uchun `''` va `""` dan foydalanamiz.String uzunligi bu undagi elementlar sonidir. Misol `console.log('Hello World'.length)` mana shu string ning uzunligi 11 ga teng, ya'ni bunda elementlar soni hisoblanmoqda. `length` - mavjud stringni uzunligini qaytaradi.JavaScriptda string o'zgarmasdir. Bu shuni anglatadiki, bir marta yangi string yaratilsa uni o'zgartirish mumkin emas. 
+### Boolean
+   Ko'pincha, dasturlashda sizga ikkita qiymatdan bittasiga ega bo'lishi mumkin bo'lgan ma'lumotlar turi kerak bo'ladi, masalan: 
+
+
 <pre>
   HA / YO'Q
   ON / OFF
   ROST / YOLG'ON
 </pre>
 Buning uchun JavaScriptda mantiqiy ma'lumotlar(Boolean) turi mavjud. Bu faqat rost(true) yoki yolg'on(false) qiymatlarni qabul qilishi mumkin .
-<br/>
-<code>Boolean()</code> funktsiyadan ifodaning (yoki o'zgaruvchining) to'g'riligini bilish uchun  foydalanishingiz mumkin: <code>console.log(Boolean(6 > 5)) </code>. Natija <code>rost(true)</code> chiqadi.
-       <h3>Null</h3> 
-  Null turi to'liq bitta qiymatga ega: null. , <br/>
-  <code>null</code> ikkita xususiyatni tushunishi kerak: 
+
+
+
+`Boolean()` funktsiyadan ifodaning (yoki o'zgaruvchining) to'g'riligini bilish uchun  foydalanishingiz mumkin: `console.log(Boolean(6 > 5)) `. Natija `rost(true)` chiqadi.
+### Null 
+  Null turi to'liq bitta qiymatga ega: null. 
+
+
+  `null` ikkita xususiyatni tushunishi kerak: 
 <pre>
 - null bo'sh yoki mavjud bo'lmagan qiymatdir.
 - null tayinlanishi kerak bo'lgan qiymatdir.
@@ -56,33 +62,37 @@ let a = null;
 console.log(a);
 // null
 </pre>
-       <h3>Undefined</h3> 
-  JavaScriptda qiymati bo'lmagan o'zgaruvchining qiymati <code>undefined</code> ga teng. Turi ham undefined. Misol: <br/>
+### Undefined 
+  JavaScriptda qiymati bo'lmagan o'zgaruvchining qiymati `undefined` ga teng. Turi ham undefined. Misol: 
+
+
   <pre>
   let computer;
   console.log(computer);
   // Undefined
   Biz computer degan o'zgaruvchi yaratdik va bu o'zgaruvchining qiymati yo'q.Shuning uchun natija undefined ga teng bo'ladi.
 </pre>
-   <h3>Symbol</h3> 
+### Symbol 
   Ma'lumotlar turi Belgi (Symbol) bo'lgan qiymatni "Belgi qiymat(Symbol value)" deb atash mumkin. JavaScriptning ishlash vaqti muhitida belgi qiymati Symbol funktsiyasini chaqirish orqali hosil bo'ladi, va bu funksiya noma'lum, noyob qiymatni dinamik ravishda ishlab chiqaradi. Belgi(Symbol)- ob'ekt xususiyati sifatida ishlatilishi mumkin.
 Belgi ixtiyoriy tavsifga ega bo'lishi mumkin, lekin faqat dasturdagi xatoliklarni bartaraf etish maqsadida.Belgi qiymati noyob identifikatorni ifodalaydi. 
-<pre>
+```JavaScript
 let Sym1 = Symbol("Sym")
 let Sym2 = Symbol("Sym")
 console.log(Sym1 === Sym2);
 // false
 Agar biz bir xil tavsifga ega bo'lgan ko'plab belgilarni yaratadigan bo'lsak ham, ular har xil qiymatlardir.
-</pre>
-   <h3>BigInt</h3> 
-  BigInt turi JavaScriptdagi raqamli primitive bo'lib, u butun sonlarni aniqlik bilan ko'rsatishi mumkin. BigInt yordamida butun son chegarasidan tashqarida ham katta butun sonlarni ishlatishingiz mumkin.BigInt butun sonning oxiriga n qo'shib yoki konstruktorni chaqirish orqali hosil bo'ladi. Misol: <br/>
-  <pre>
+```
+### BigInt 
+  BigInt turi JavaScriptdagi raqamli primitive bo'lib, u butun sonlarni aniqlik bilan ko'rsatishi mumkin. BigInt yordamida butun son chegarasidan tashqarida ham katta butun sonlarni ishlatishingiz mumkin.BigInt butun sonning oxiriga n qo'shib yoki konstruktorni chaqirish orqali hosil bo'ladi. Misol: 
+
+
+  ```JavaScript
   const x = 2n ** 53n;
   console.log(x);
   // 9007199254740992n
-</pre>
-BigInt bilan <code>+</code>,<code>*</code>,<code>-</code>,<code>**</code> va <code>%</code> operatorlaridan foydalanishingiz mumkin - xuddi Sonlar(Numbers) kabi.BigInt mantiqiy(boolean) shaklga o'tkaziladigan holatlarda o'zini raqam(number) kabi tutadi: <code>if</code>, <code>||</code>, <code>&&</code>, <code>Boolean</code>,<code>!</code>.
-<h3>Null va Undefined orasidagi farq</h3>
+```
+BigInt bilan `+`,`*`,`-`,`**` va `%` operatorlaridan foydalanishingiz mumkin - xuddi Sonlar(Numbers) kabi.BigInt mantiqiy(boolean) shaklga o'tkaziladigan holatlarda o'zini raqam(number) kabi tutadi: `if`, `||`, `&&`, `Boolean`,`!`.
+Null va Undefined orasidagi farq
 JavaScriptda <code>undefined</code> o'zgaruvchining e'lon qilinganligini anglatadi, ammo hali unga qiymat berilmagan, masalan: <br/>
 <pre>
 var testVar;
