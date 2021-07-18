@@ -3,7 +3,7 @@
 
 
 
-  Dasturlashda data tiplari muhim tushuncha hisoblanadi. O'zgaruvchilar ustida ishlashni ta'minlash uchun uning turi haqida ma'lumotga ega bo'lishimiz muhimdir. Data tiplarisiz kompyuter buni xavfsiz hal qila olmaydi.
+  Dasturlashda data tiplari muhim tushuncha hisoblanadi. O'zgaruvchilar ustida ishlashni ta'minlash uchun uning tipi haqida ma'lumotga ega bo'lishimiz muhimdir. Data tiplarisiz kompyuter buni xavfsiz hal qila olmaydi.
 
 <img src="https://i.ibb.co/54h84xX/image.jpg" />
 
