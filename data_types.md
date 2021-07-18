@@ -258,4 +258,4 @@ Misol:
   
   - Agar bir xil tipdagi o'zgaruvchilar bilan ishlamoqchi bo'lsak **primitive** typedan foydalanishimiz kerak.
   - Bir nechta tiplardan foydalanmoqchi bo'lsak **Non-primitive**  typedan foydalanganimiz ma'qul
-  - 
+  
