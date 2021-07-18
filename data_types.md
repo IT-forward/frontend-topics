@@ -3,12 +3,12 @@
 
 
 
-  Dasturlashda ma'lumotlar turlari muhim tushuncha hisoblanadi. O'zgaruvchilar ustida ishlashni ta'minlash uchun uning turi haqida ma'lumotga ega bo'lishimiz muhimdir. Ma'lumotlar turlarisiz kompyuter buni xavfsiz hal qila olmaydi.
+  Dasturlashda data tiplari muhim tushuncha hisoblanadi. O'zgaruvchilar ustida ishlashni ta'minlash uchun uning turi haqida ma'lumotga ega bo'lishimiz muhimdir. Data tiplarisiz kompyuter buni xavfsiz hal qila olmaydi.
 
 <img src="https://i.ibb.co/54h84xX/image.jpg" />
 
 
-  Ko'rib turganingizdek ma'lumot turlari(data type) 2 turga bo'linadi : 
+  Ko'rib turganingizdek data tiplari 2 turga bo'linadi : 
   
   
   1. **Primitive**  
@@ -40,11 +40,16 @@
 
 ### String
 
-  JavaScriptda matnli ma'lumotlarni ko'rsatish uchun string turi ishlatilinadi. Stringni quyidagi ko'rinishda yozishimiz mumkin : `"Salom Dunyo", 'Hello World'`. Matnli ma'lumotlarni stringga aylantirishimiz uchun `''` va `""` dan foydalanamiz.String uzunligi bu undagi elementlar sonidir. Misol `console.log('Hello World'.length)` mana shu string ning uzunligi 11 ga teng, ya'ni bunda elementlar soni hisoblanmoqda. `length` - mavjud stringni uzunligini qaytaradi.JavaScriptda string o'zgarmasdir. Bu shuni anglatadiki, bir marta yangi string yaratilsa uni o'zgartirish mumkin emas. 
+  JavaScriptda matnli ma'lumotlarni ko'rsatish uchun string turi ishlatilinadi. Stringni quyidagi ko'rinishda yozishimiz mumkin : `"Salom Dunyo", 'Hello World'`. Matnli ma'lumotlarni stringga aylantirishimiz uchun `''` va `""` dan foydalanamiz.String uzunligi bu undagi elementlar sonidir. Misol:
+  ```JavaScript
+  console.log('Hello World'.length);
+  //11
+  ```
+ Berilgan stringni uzunligi 11 ga teng, ya'ni bunda elementlar soni hisoblanmoqda. `length` - mavjud stringni uzunligini qaytaradi.JavaScriptda string o'zgarmasdir. Bu shuni anglatadiki, bir marta yangi string yaratilsa uni o'zgartirish mumkin emas. 
 
 ### Boolean
 
-   Ko'pincha, dasturlashda sizga ikkita qiymatdan bittasiga ega bo'lishi mumkin bo'lgan ma'lumotlar turi kerak bo'ladi, masalan: 
+   Ko'pincha, dasturlashda sizga ikkita qiymatdan bittasiga ega bo'lishi mumkin bo'lgan data tip kerak bo'ladi, masalan: 
 
 
 ```
@@ -53,15 +58,13 @@
   ROST / YOLG'ON
 ```
 
-Buning uchun JavaScriptda mantiqiy ma'lumotlar(Boolean) turi mavjud. Bu faqat rost(true) yoki yolg'on(false) qiymatlarni qabul qilishi mumkin .
+Buning uchun JavaScriptda mantiqiy data tip (Boolean) mavjud. Bu faqat `rost(true)` yoki `yolg'on(false)` qiymatlarni qabul qilishi mumkin .
 
 
 
 `Boolean()` funktsiyadan ifodaning (yoki o'zgaruvchining) to'g'riligini bilish uchun  foydalanishingiz mumkin: `console.log(Boolean(6 > 5)) `. Natija `rost(true)` chiqadi.
 
 ### Null 
-
-  Null turi to'liq bitta qiymatga ega: null. 
 
 
   `null` ikkita xususiyatni tushunishi kerak: 
@@ -76,7 +79,7 @@ console.log(a);
 
 ### Undefined 
 
-  JavaScriptda qiymati bo'lmagan o'zgaruvchining qiymati `undefined` ga teng. Turi ham undefined. Misol: 
+  JavaScriptda qiymati bo'lmagan o'zgaruvchining qiymati `undefined` ga teng. Tipi ham undefined. Misol: 
 
 
 ```JavaScript
@@ -89,8 +92,7 @@ console.log(a);
 
 ### Symbol 
 
-  Ma'lumotlar turi Belgi (Symbol) bo'lgan qiymatni "Belgi qiymat(Symbol value)" deb atash mumkin. JavaScriptning ishlash vaqti muhitida belgi qiymati Symbol funktsiyasini chaqirish orqali hosil bo'ladi, va bu funksiya noma'lum, noyob qiymatni dinamik ravishda ishlab chiqaradi. Belgi(Symbol)- ob'ekt xususiyati sifatida ishlatilishi mumkin.
-Belgi ixtiyoriy tavsifga ega bo'lishi mumkin, lekin faqat dasturdagi xatoliklarni bartaraf etish maqsadida.Belgi qiymati noyob identifikatorni ifodalaydi. 
+ Data tipi Symbol bo'lgan qiymatni "Symbol value" deb atash mumkin. JavaScriptning ishlash vaqti muhitida symbol value Symbol funksiyasini chaqirish orqali hosil bo'ladi va bu funksiya noma'lum, noyob qiymatni dinamik ravishda ishlab chiqaradi. Symbol - ob'ekt property'si sifatida ishlatilishi mumkin. 
 
 ```JavaScript
 let Sym1 = Symbol("Sym")
@@ -109,16 +111,18 @@ console.log(Sym1 === Sym2);
   console.log(x);
   // 9007199254740992n
 ```
-BigInt bilan `+`,`*`,`-`,`**` va `%` operatorlaridan foydalanishingiz mumkin - xuddi Sonlar(Numbers) kabi.BigInt mantiqiy(boolean) shaklga o'tkaziladigan holatlarda o'zini raqam(number) kabi tutadi: `if`, `||`, `&&`, `Boolean`,`!`.
-Null va Undefined orasidagi farq
+BigInt bilan `+`,`*`,`-`,`**` va `%` operatorlaridan foydalanishingiz mumkin - xuddi Numbers kabi.BigInt Boolean shaklga o'tkaziladigan holatlarda o'zini number kabi tutadi: `if`, `||`, `&&`, `Boolean`,`!`.
+
+### Null va Undefined orasidagi farq
 JavaScriptda `undefined` o'zgaruvchining e'lon qilinganligini anglatadi, ammo hali unga qiymat berilmagan, masalan: 
 
 
-<pre>
+```JavaScript
 var testVar;
 console.log(testVar);            // undefined
 console.log(typeof testVar);     // undefined
-</pre>
+```
+
 `null` esa tayinlash qiymati. U o'zgaruvchiga bo'sh qiymatning ifodasi sifatida berilishi mumkin:  
 
 ```JavaScript
@@ -126,9 +130,6 @@ var testVar = null;
 console.log(testVar);            // null
 console.log(typeof testVar);     // object
 ```
-
-Oldingi misollardan ko'rinib turibdiki undefined a null lar ikki xil turga ega: undefined bu tip o'zi (aniqlanmagan) esa null ob'ektdir.
-
 
 ```JavaScript
 console.log(null === undefined)     // false
@@ -159,3 +160,102 @@ console.log(undefined = 'value')     // 'value'
 
 null o'zini tipiga mansub bo'lsada, JavaScript bu holatda "object" qaytaradi.
  
+**Non-primitive**
+
+Keling endi Non-primitive lar haqida so'z yuritsak, yuqorida ko'rsatilganidek Non-primitive type ga faqat `Object` kiradi. 
+
+### Object 
+ - o'zida bir qancha property ni saqlay olish xususiyatiga ega;
+ - {} qavslar orqali objectlarni yozishimiz mumkin.
+Bunga misol:
+```JavaScript
+let data = {
+  name: "John",
+  age: 25,
+  isMarried: true,
+  hello: function() {
+    console.log('Assalomu aleykum');
+  }
+}
+
+data.hello();
+// Assalomu aleykum
+```
+
+data degan Object yaratdik va ushbu ob’ektda bir nechta tiplar joylashgan.Ob’ektlarning eng yaxshi tomonlaridan biri shundaki, biz funktsiyani uning qiymatlaridan biri sifatida saqlashimiz mumkin.
+
+```JavaScript
+  let person = { name: 'John Doe' , age: 25 , isMarried: true}
+```
+yoki
+``` JavaScript
+  let array = ['apelsen', null, undefined, false, 26]
+```
+
+Ko'rib turganimezdek Object tipi misolida `array` va `object` keltirilgan. Bu holatda, ikkala o'zgaruvchi ham bir qancha qiymatlarni o'zida saqlab qoldi. Aynan shu xususiyat ularni **Non-primitive** qiladi.
+
+```JavaScript
+Array, Function, Object bularning hammasining tipi object hisoblanadi.
+````
+
+### Array
+
+Array - bu bir vaqtning o'zida bir nechta qiymatga ega bo'lishi mumkin bo'lgan o'zgaruvchidir.
+
+
+Agar sizda avtomobillar nomlari ro'yxati mavjud bo'lsa, ularni o'zgaruvchilarga saqlash quyidagicha ko'rinishi mumkin:
+
+```JavaScript
+let avtomobil1 = 'Malibu';
+let avtomobil2 = 'Damas';
+let avtomobil3 = 'Nexia';
+```
+
+Hozir bu yerda bizlarga faqatgina 3 tagina avtomobil nomi keltirib o'tilgan, shular soni 300 ta bo'lsa, yuqoridagi ketma-ketlikda ularni e'lon qilishimiz umuman tushunarsiz holatga kelib qoladi. Sababi biz  `avtomobil1, avtomobil2, ........ avtomobil300` deb o'zgaruvchilarni e'lon qilsak, ularni oladigan qiymati baribir 1 xil ko'rinishdagi avtomobil nomlariga teng bo'ladi. Keling shu ishni `array` da qilib ko'ramiz:
+
+
+```JavaScript
+let avtomobil = ['Malibu','Damas','Nexia','Spark','Captiva'];
+```
+
+Array bitta nom ostida ko'plab qiymatlarni o'z ichiga olishi mumkin va siz indeks raqamiga murojaat qilib qiymatlarga kirishingiz mumkin.
+
+```JavaScript
+let avtomobil = ['Malibu','Damas','Nexia','Spark','Captiva'];
+let avto = avtomobil[0];
+console.log(avto);
+// Malibu
+```
+
+>Massiv indekslari 0 dan boshlanadi. [0] - birinchi element, [1] -ikkinchi element
+
+
+### Funksiya
+
+Funksiya bu ma'lum bir vazifani bajarish uchun mo'ljallangan kod bloki.
+
+```JavaScript
+function myFunction(a,b) {
+  return a * b;
+}
+```
+
+JavaScript funksiyasi `function` kalit so'z bilan belgilanadi, so'ngra funksiya nomi, keyin argument qabul qiladigan `()`.
+Funksiya nomlari harflar,raqamlar, `_` va `$` belgilaridan iborat bo'lishi mumkin.
+`()` ichida vergul bilan ajratilgan bir nechta parametr nomlari bo'lishi mumkin.
+Funksiya bo'yicha bajariladigan kod jingalak qavs ichiga yoziladi : `{}`.
+Funksiya ichidagi kod biror hodisa yuz berganda(foydalanuvchi tugmani bosganda) bajariladi.
+
+Misol:
+```JavaScript
+  function name(parametr_1, parametr_2, parametr_3) {
+    return parametr_1 + parametr_2 * parametr_3
+  }
+```
+  > return funksiya bajarilishini to'xtatadi.
+
+  ### Xulosa
+  
+  - Agar bir xil tipdagi o'zgaruvchilar bilan ishlamoqchi bo'lsak **primitive** typedan foydalanishimiz kerak.
+  - Bir nechta tiplardan foydalanmoqchi bo'lsak **Non-primitive**  typedan foydalanganimiz ma'qul
+  - 
