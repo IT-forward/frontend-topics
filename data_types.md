@@ -252,7 +252,7 @@ function myFunction(a,b) {
 ```
 
 JavaScript funksiyasi `function` kalit so'z bilan belgilanadi, so'ngra funksiya nomi, keyin argument qabul qiladigan `()`.
-Funksiya nomlari xarflar, raqamlar, `_` va `$` belgilaridan iborat bo'lishi mumkin.
+Funksiya nomlari harflar, raqamlar, `_` va `$` belgilaridan iborat bo'lishi mumkin.
 `()` ichida vergul bilan ajratilgan bir nechta parametr nomlari bo'lishi mumkin. Bu parametrlarni funksiya ichida o'zgaruvchi kabi ishlatishimiz mumkin. Yuqoridagi `myFunction(a,b)` funksiyamiz bunga yaxshi misol bo'la oladi.
 Funksiya bo'yicha bajariladigan kod figurali qavs ichiga yoziladi : `{}`.
 Funksiya ichidagi kod  funksiya chaqirilganda bajariladi. Funksiyani chaqirish uning nomi ortidan kerakli parametrning aniq qiymatlarini berish orqali amalga oshiriladi.
