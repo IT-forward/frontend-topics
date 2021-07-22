@@ -1,4 +1,4 @@
-# Ma'lumotlar turlari (Data types)
+# Data Tiplari (Data types)
 <img src="https://i.ibb.co/YkPGqK9/assja.jpg" />
 
 
@@ -57,7 +57,7 @@ console.log('b = ', b); // b = 5
   console.log('Hello World'.length);
   //11
   ```
- Berilgan stringni uzunligi 11 ga teng, ya'ni bunda elementlar soni hisoblanmoqda. `length` - mavjud stringni uzunligini qaytaradi. 
+ Berilgan stringni uzunligi 11 ga teng, ya'ni bunda elementlar soni hisoblanmoqda. `length` property'si - mavjud stringni uzunligini qaytaradi. 
 
 ### Boolean
 
@@ -86,7 +86,7 @@ Boolean('Salom') // true
 ### Null 
 
 
-  `null` ikkita xususiyatni tushunishi kerak: 
+  `null` tipini ikkita xususiyati bilan tushunishi kerak:  
 
 ```
 - null bo'sh yoki mavjud bo'lmagan qiymatdir.
@@ -123,7 +123,7 @@ console.log(a);
   console.log(x);
   // 9007199254740992n
 ```
-BigInt bilan `+`,`*`,`-`,`**` va `%` operatorlaridan foydalanishingiz mumkin - xuddi Numbers kabi. BigInt Boolean shaklga o'tkaziladigan holatlarda o'zini number kabi tutadi: `if`, `||`, `&&`, `Boolean`,`!`.
+BigInt bilan `+`,`*`,`-`,`**` va `%` operatorlaridan foydalanishingiz mumkin - xuddi Number kabi. BigInt Boolean shaklga o'tkaziladigan holatlarda o'zini number kabi tutadi: `if`, `||`, `&&`, `Boolean`,`!`.
 
 ### Null va Undefined orasidagi farq
 JavaScriptda `undefined` o'zgaruvchining e'lon qilinganligini anglatadi, ammo hali unga qiymat berilmagan, masalan: 
@@ -172,7 +172,19 @@ null "object" tipiga mansub bo'lsada, u primitiv tipdir.
  
 **Non-primitive**
 
-Keling endi Non-primitive lar haqida so'z yuritsak, yuqorida ko'rsatilganidek Non-primitive type ga faqat `Object` kiradi. 
+Keling endi Non-primitive lar haqida so'z yuritsak, yuqorida ko'rsatilganidek Non-primitive type ga faqat `Object` kiradi. Va uni qiymatini bevosita ham o'zgartirsa bo'ladi. Bunday xususiyatga ega type'lar inglizchada "mutable types" deyiladi. Misol:
+
+```JavaScript
+const car1 = {name: 'BMW', color: 'blue'};
+const car2 = car1;
+
+console.log('car1: ', car1);  // car1: {name: 'BMW', color: 'blue'}
+console.log('car2: ', car2);  // car2: {name: 'BMW', color: 'blue'}
+
+car1.name = 'Chevrolet';
+console.log('car1: ', car1);  // car1: {name: 'Chevrolet', color: 'blue'}
+console.log('car2: ', car2);  // car2: {name: 'Chevrolet', color: 'blue'}
+```
 
 ### Object 
  - o'zida bir qancha property ni saqlay olish xususiyatiga ega;
