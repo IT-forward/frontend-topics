@@ -150,7 +150,7 @@ Yuqoridagi misolda natija `num` o'zgaruvchisi oladigan qiymatga bog'liqdir.
 
 Agar num o'zgaruvchisi qiymati 0.5 dan kichik bo'lsa, `if` operatori bajariladi va uning ichidagi `resolve()` funksiyasi chaqiriladi. _resolve()_ funksiya chaqirildi degani, promise'ning holati o'zgardi deganidir. Ya'ni _pending_ holatdan _fulfilled_ holatga o'tdi degani. Va bu holatning qiymatini _resolve()_ funkiyasiga argument sifatida berib qaytarilyapti.
 
-Agar num o'zgaruvchisi 0.5 dan kichik bo'lmaydigan bo'lsa, u holda `else` operatori bajariladi va uning ichidagi `reject()` funksiyasi chaqiriladi. Bunda ham _reject()_ funksiya chaqirildi degani, promise'ning holati o'zgardi deganidir. Ya'ni _pending_ holatdan _rejected_ holatiga o'tdi degani. Va bu holatning qiymati(rad etilganlik sababi)ni _reject_ funksiyaga argument sifatida beril qaytarilyapti.
+Agar num o'zgaruvchisi 0.5 dan kichik bo'lmaydigan bo'lsa, u holda `else` operatori bajariladi va uning ichidagi `reject()` funksiyasi chaqiriladi. Bunda ham _reject()_ funksiya chaqirildi degani, promise'ning holati o'zgardi deganidir. Ya'ni _pending_ holatdan _rejected_ holatiga o'tdi degani. Va bu holatning qiymati(rad etilganlik sababi)ni _reject()_ funksiyaga argument sifatida beril qaytarilyapti.
 
 Bizning misolda ikkala resolve() va reject() funksiyalari qaytaradigan qiymat, promise'ning qiymati ham bo'ladi.
 
@@ -158,7 +158,7 @@ Yuqoridagi misolda ko'rib turganinggizdek `then()` metodi ikkata funksiya olayap
 
 _then()_ metodidagi 1 - parametr funksiya qachonki promise holati fulfilled holatga o'tganda bajariladi. 2 - parametr funksiya esa promise holati rejected holatga o'tganda bajariladi.
 
-Shuning sababli bu funksiyalar tartibi muhim hisoblanadi.
+Shu sababli bu funksiyalar tartibi muhim hisoblanadi.
 
 Qulaylik yaratish maqsadida bu ikkala paramertni ajratib yozish usuli kiritilgan. Buning uchun bizga _then_ ga o'xshash boshqa metod kerak bo'ladi. Bu metod nomini `catch()` deb nomlashgan. catch() metodi rejected qiymatlar bilan ishlash uchun mo'ljallangan.
 
@@ -168,9 +168,9 @@ Qulaylik yaratish maqsadida bu ikkala paramertni ajratib yozish usuli kiritilgan
 promise.then(handleSuccess).catch(handleFailure);
 ```
 
-Tasavvur qiling siz biror promise ishlatdingiz va bu promise'ning qiymati sifatida sizga boshqa bir yangi promise qaytmoqda. Bunday holatlarda siz birinchi promise qiymatini ya'ni yangi promise'ni then() orqali then orqali ishlatib, undan qaytayotgan qiymatni yana then() metodi bilan ishlatsangiz bo'ladi.
+Tasavvur qiling siz biror promise ishlatdingiz va bu promise'ning qiymati sifatida sizga boshqa bir yangi promise qaytmoqda. Bunday holatlarda siz birinchi promise qiymatini then() orqali ishlatib, undan qaytayotgan qiymatni yana then() metodi bilan ishlatshingiz mumkin bo'ladi.
 
-`promise.then(handleSuccess).then(handleSuccess);`
+`promise.then(handleSuccess).then(handleSuccess_2);`
 
 Bunday korinishdagi bog'lanishlarni inglizchada **promise chaining** ya'ni zanjir bog'lanish deb atashadi.
 
@@ -179,8 +179,10 @@ const promise = new Promise((resolve, reject) => {
   if (biror_shart) {
     const yangiPromise = new Promise((resolve2, reject2) => {
       if (yana_biror_shart) {
+          ...
         resolve2(qiymat);
       } else {
+          ...
         reject2(sabab);
       }
     });
@@ -197,15 +199,15 @@ promise
   .catch((sabab) => console.log(sabab));
 ```
 
-JavaScriptda shunaqa uzun bog'lanishlarni tagma - tag yozish imkoniyati kiritilgan.
+JavaScriptda shunaqa uzun bog'lanishlarni tagma - tag yozish imkoniyati kiritilgan. Va u usul yuqorida ham ishlatildi.
 
-> Yuqoridagi misolda catch() metodi, har ikkala promise'ning birortasi rejected holatga o'tganda chaqilidadi va shu promise'dan keyingi then() metodlarning bajarilishi to'xtatiladi.
+> Yuqoridagi misolda catch() metodi, har ikkala promise'ning birortasi rejected holatga o'tganda chaqiriladi va shu promise'dan keyingi then() metodlarning bajarilishi to'xtatiladi.
 
 Shunday qilib biz promise qiymatidan foydalanmoqchi bo'lsak, bizga `then()` va `catch()` metodlari kerak bo'lar ekan. _then_ resolved, _catch_ rejected qiymatlar bilan ishlar ekan.
 
 ## async \ await
 
-JavaScriptda asinxron ifodalar bilan uchun [**callback**](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) funksiyalardan foydalaniladi. Bir martalik amallar uchun callback'lardan foydalanishni yomon tarafi yo'q. Lekin callback'lar soni ko'paygan sayin, kodimiz shunchalik qiyinlashib boradi. Ya'ni bitta callback ichida boshqa callback va uning ichida yana boshqasi kelib kod murakkablashadi. Bunday kodlarni o'qish va tahlil qilish qiyin bo'ladi.
+JavaScriptda asinxron ifodalar bilan ishlash uchun [**callback**](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) funksiyalardan foydalaniladi. Bir martalik amallar uchun callback'lardan foydalanishni yomon tarafi yo'q. Lekin callback'lar soni ko'paygan sayin, kodimiz shunchalik qiyinlashib boradi. Ya'ni bitta callback ichida boshqa callback va uning ichida yana boshqasi kelib kod murakkablashadi. Bunday kodlarni o'qish va tahlil qilish qiyin bo'ladi.
 
 Shu sababdan [ES8](https://en.wikipedia.org/wiki/ECMAScript#8th_Edition_-_ECMAScript_2017)da bunday ishlarni qulaylashtirish uchun yangi tushuncha kiritilgan bo'lib, u [`async...await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) tushunchasidir.
 
@@ -231,7 +233,7 @@ async function myFunc() {
 myFunc().then((qiymat) => console.log(qiymat));
 ```
 
-Yuqoridagi misolda biz async kalit so'zidan foydalandik-u lekin await kalit so'zidan foydalanmadik. Aslida async har doim await kalit so'zi bilan birga keladi. Ya'ni foydali ish qiladigan asinxron funksiya yaratayapmizmi bu funksiya oldiga async kalit so'zini qo'yishimiz va uni ichda await'dan foydalanishimiz kerak.
+Yuqoridagi misolda biz async kalit so'zidan foydalandik-u, lekin await kalit so'zidan foydalanmadik. Aslida async har doim await kalit so'zi bilan birga keladi. Ya'ni foydali ish qiladigan asinxron funksiya yaratayapmizmi bu funksiya oldiga async kalit so'zini qo'yishimiz va uni ichda await'dan foydalanishimiz kerak bo'ladi.
 
 `await` - ham o'zi bir operator hisoblanadi. Bu operator bizga promise'ning resolved qiymatini qaytarib beradi.
 
@@ -269,15 +271,17 @@ awaitBilan(); // Muvaffaqiyatli qiymat
 awaitSiz(); // Promise(...)
 ```
 
-Boshqacha qilib aytganda await operatoridan keyin keladigan amallar aslida then chaining'dagi ikkinchi then ichidagi amallardir.
+Boshqacha qilib aytganda await operatoridan keyin keladigan amallar aslida _then chaining_'dagi ikkinchi then() ichidagi amallardir.
 
 ```js
 const promise = new Promise((resolve, reject) => {
   if (biror_shart) {
     const yangiPromise = new Promise((resolve2, reject2) => {
       if (yana_biror_shart) {
+          ...
         resolve2(qiymat);
       } else {
+          ...
         reject2(sabab);
       }
     });
@@ -303,9 +307,11 @@ promise
    const natija2 = await yangiPromise;
    console.log(natija2);
  }
+
+ awaitFunc().catch((sabab) => console.log(sabab));
 ```
 
-Yuqoridagi misolni o'zingiz yaxshilab tahlil qilib o'rganing!
+> Yuqoridagi misolni o'zingiz yaxshilab tahlil qilib o'rganing!
 
 Quyidagi na'munaviy misolda siz async \ await sintaksisini qulayligini ko'rishingiz mumkin.
 
@@ -370,7 +376,7 @@ Yuqoridagi ikkala yo'l ham xatoni tutish uchun to'g'ri yo'l hisoblanadi. Lekin `
 
 - Shunday qilib JavaScript'da __asinxron__ amallar __sinxon__ amallardan so'ng bajarilar ekan.
 
-- JavaScript'da asinxron amallarni to'g'ri boshqarish uchun __Promise__ objectni kiritilgan ekan.
+- JavaScript'da asinxron amallarni to'g'ri boshqarish uchun __Promise__ objecti kiritilgan ekan.
 
 - Promise 3 xil holatdan birida bo'lar ekan (pending, fulfilled, rejected).
 
