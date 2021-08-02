@@ -53,7 +53,20 @@ console.log("4 - chiqadi");
 
 Biz yuqorida sinxron va asinxron funksiyalar bilan tanishdik. Endi **asinxron** funksiya ishlash prinsipi asosida qurilgan metodlardan biri [**Promise**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) lar bilan tanishamiz.
 
-Tasavvur qiling siz media fayllarga boy biror saytga tashrif buyurayapsiz. Sizda u sayt quyidagi ikki xil ko'rinishda yuklanishi mumkin. **1 - ko'rinishi:** saytdagi media fayllar va context(matn)lar birinma - ketin yuklanishi yoki **2 - ko'rinishi:** oldin contextlar yuklanib keyin media fayllar yuklanishi mumkin. Bunda 1 - holatda sayt o'ziga ko'p foydalanuvchilarni jalb qila olmasligi mumkin. Sababi bunday saytlarda qotishlar bo'lishi mumkin. Chunki kattaroq media fayllarni browserga joylashtirish ko'proq vaqt oladi. Tabiiyki, foydalanuvchi noma'lum sayt yuklanishini uzoq vaqt kutishni yoqtirmaydi. 2 - holatda esa saytdagi matnli ma'lumotlar birinchi to'liq yuklanadi, so'ng media fayllar. Bu degani saytni to'liq yuklanishini kutmasdan turib, saytdagi mantlardan bu sayt sizga kerakli yoki yo'qligini aniqlashingiz mumkin degani. Xulosa qiladigan bo'lsak, siz saytingizni 2 - usul orqali yaratsangiz, sizning sayt birinchisiga nisbatan foydalanuvchiga qulay bo'ladi. Bunday saytlarni yaratishda esa siz _Promise_'lardan foydalanishingiz mumkin.
+Tasavvur qiling siz sherigingiz bilan restorantga kirdingiz va biror bo'sh joyga o'tirdingiz. Keyin ofitsiyant sizdan buyurtma olish uchun keldi. Siz biror taom buyurtma berdingiz. Ofitsiyant sizning buyurtmangizni o'z daftarchasiga yozdi va oshxona tamon yo'l oldi. Endi siz buyurtmangiz kelmaguncha joyingizdan turmay, hech kimga gapirmay, faqat oshxona tomonga qarab, ofitsiyantni kutib o'tirasizmi? Albatta yo'q. Siz sherigingiz bilan suhbatlashib, derazadan ko'chaga qarab o'tirasiz. Ma'lum mudatdan so'ng ofitsiyant buyurtmangizni olib keladi. Va sizga yoqimli ishtaxa tilab o'z ishini davom ettiradi.
+
+Sizni buyurtma kelgunigacha sherigingiz bilan suhbatlashgan va derazadan ko'chaga qaragan amallaringiz __sinxron__ amallar hisoblanadi. Sizni ofitsiyantga taom buyurtma qilishingiz __asinxron__ amal hisoblanadi va u __promise__ deb nomlanadi.
+Ofitsiyant sizga olib kelib bergan _buyurtma taom_ ingiz esa promise _qiymat_ i hisoblanadi.
+
+Endi tasavvur qiling sizni ofintsiyantga buyurtma qilgan taomingiz har doim ham oshxonada mavjud bo'lmasligi mumkin. Shunda ofinsiyant nima qiladi. Ofitsiyant sizga kelib oshxonada bu taom qolmaganini uzrini aytib, sizga boshqa taom buyurtma qilishingizni taklif qiladi.
+
+Ko'rinib turibdiki promise uch xil holatdan birida bo'lar ekan. 1 - holat: ofitsiyant sizdan buyurtmani olib oshxonaga borib, yana qaytib kelish holati ya'ni kutish holati. 2 - holat: ofitsiyant sizga taomingizni olib kelishi mumkin bo'lgan holat. 3 - holat: oshxonada siz buyurtma qilgan taom bo'lmay, ofitsiyant sizga uzr aytgan holat.
+
+Shunday qilib promise uch xil holatda bo'lar ekan. Bular:
+
+- pending (kutilayotgan holat)
+- fulfilled (bajarilgan holat)
+- rejected (rad etilgan holat)
 
 Siz o'zingizni promise'ingizni yaratayotganda **Promise()** konstruktor metodidan foydalanishingiz kerak.
 
@@ -66,12 +79,6 @@ const myPromise = new Promise((resolve, reject) => {
 bu yerda `new` kalit so'zi yangi obyekt yaratilayotganini bildiradi.
 
 Promise ham sinxron funksiyalar kabi oddiy qiymat qaytaradigan funksiya hisoblanadi. Faqat qiymatni birdaniga emas kelajakdagi ma'lum vaziyatlarga nisbatan qaytaradi.
-
-Promise 3 xil holatdan birida bo'lishi mumkin.
-
-- pending (kutilayotgan holat)
-- fulfilled (bajarilgan holat)
-- rejected (rad etilgan holat)
 
 Pending holat - promise'ning boshlang'ish holati hisoblanadi. Promise pending holatdan so'ng fulfilled yoki rejected holatlaridan biriga o'tadi.
 
