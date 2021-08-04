@@ -36,7 +36,7 @@ To'g'ri javob quyidagicha bo'ladi
 
 Siz aytishingiz mumkin `setTimeout()` funksiyaga vaqt sifatida nol berilganku. Bu degani bu funksiya hech qancha vaqt kutmasdan o'zini vazifasini bajarishi kerak deb. Ha aslida shunday. Lekin, bu yerda hammma gap **sinxron** va **asinxron** funksiyalarda. [`console.log()`](https://developer.mozilla.org/en-US/docs/Web/API/console/log) - sinxron, `setTimeout()` - asinxron funksiya hisoblanadi. Va asinxron funksiya sinxron funksiyadan so'ng bajariladi.
 
-JavaScript Engine kodni o'qish jarayonida asinxron funksiyalarni [queue](<https://dmitripavlutin.com/javascript-queue/#:~:text=The%20queue%20data%20structure%20is,constant%20time%20O(1)%20.>)(navbat)ga yig'ib boradi va hamma sinxron funksiyalarni bararib bo'lgandan so'ng, navbati bilan queue'dagi asinxron funksiyalarni bajarishni boshlaydi.
+JavaScript Engine kodni o'qish jarayonida asinxron funksiyalarni [queue](<https://dmitripavlutin.com/javascript-queue/#:~:text=The%20queue%20data%20structure%20is,constant%20time%20O(1)%20.>)(navbat)ga yig'ib boradi va hamma sinxron funksiyalarni bajarib bo'lgandan so'ng, navbati bilan queue'dagi asinxron funksiyalarni bajarishni boshlaydi.
 
 Shuning uchun bizni misolimizda setTimeout funksiyaga nol argumenti berilgani bilan ham u oxirida bajarilyapti.
 
@@ -49,13 +49,13 @@ setTimeout(() => console.log("3 - chiqadi"), 0);
 console.log("4 - chiqadi");
 ```
 
-> Shunday qilib bir amalni to'liq bajarilib bo'lishini kutib, keyin boshqa amal bajarilishi **sinxron** amal deyiladi. Bir amalni to'liq baratilib bo'lishini kutmasdan turib, boshqa amalni bararilishi **asinxron** amal deyiladi.
+> Shunday qilib bir amalni to'liq bajarilib bo'lishini kutib, keyin boshqa amal bajarilishi **sinxron** amal deyiladi. Bir amalni to'liq bajarilib bo'lishini kutmasdan turib, boshqa amalni bajarilishi **asinxron** amal deyiladi.
 
 ## Promise
 
 Biz yuqorida sinxron va asinxron funksiyalar bilan tanishdik. Endi **asinxron** funksiya ishlash prinsipi asosida qurilgan metodlardan biri [**Promise**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) lar bilan tanishamiz.
 
-Tasavvur qiling siz sherigingiz bilan restorantga kirdingiz va biror bo'sh joyga o'tirdingiz. Keyin ofitsiyant sizdan buyurtma olish uchun keldi. Siz biror taom buyurtma berdingiz. Ofitsiyant sizning buyurtmangizni o'z daftarchasiga yozdi va oshxona tamon yo'l oldi. Endi siz buyurtmangiz kelmagungacha joyingizdan turmay, hech kimga gapirmay, faqat oshxona tomonga qarab, ofitsiyantni kutib o'tirasizmi? Albatta yo'q. Siz sherigingiz bilan suhbatlashib, derazadan ko'chaga qarab o'tirasiz. Ma'lum mudatdan so'ng ofitsiyant buyurtmangizni olib keladi. Va sizga yoqimli ishtaxa tilab, o'z ishini davom ettiradi.
+Tasavvur qiling siz sherigingiz bilan restorantga kirdingiz va biror bo'sh joyga o'tirdingiz. Keyin ofitsiyant sizdan buyurtma olish uchun keldi. Siz biror taom buyurtma berdingiz. Ofitsiyant sizning buyurtmangizni o'z daftarchasiga yozdi va oshxona tomon yo'l oldi. Endi siz buyurtmangiz kelmagungacha joyingizdan turmay, hech kimga gapirmay, faqat oshxona tomonga qarab, ofitsiyantni kutib o'tirasizmi? Albatta yo'q. Siz sherigingiz bilan suhbatlashib, derazadan ko'chaga qarab o'tirasiz. Ma'lum muddatdan so'ng ofitsiyant buyurtmangizni olib keladi. Va sizga yoqimli ishtaxa tilab, o'z ishini davom ettiradi.
 
 Sizni buyurtma kelgunigacha sherigingiz bilan suhbatlashgan va derazadan ko'chaga qaragan amallaringiz **sinxron** amallar hisoblanadi. Sizni ofitsiyantga taom buyurtma qilishingiz esa **asinxron** amal hisoblanadi va u **promise** deb nomlanadi.
 Ofitsiyant sizga olib kelib bergan _buyurtma taom_ esa promise _qiymat_ i hisoblanadi.
@@ -115,7 +115,7 @@ const executorFunc = (resolve, reject) => {
 const myPromise = new Promise(executorFunc);
 ```
 
-Bu yerda `myPromise` degan o'zgaruvchi Promise() konstruktor metodi yordamida qurilayapti. Va bu konstruktorga argument sifatida `executorFunc` funksiyasi berib yuborilayapti. Executor funksiyasi ichida shart tekshirilayapti. Agar shart rost baholansa promise qiymati sifatida _'muvoffiqiyatli_qiymat'_, aks holatda _'rad_etilganlik_sababi'_ matnlari qaytarilayapti.
+Bu yerda `myPromise` degan o'zgaruvchi Promise() konstruktor metodi yordamida qurilayapti. Va bu konstruktorga argument sifatida `executorFunc` funksiyasi berib yuborilayapti. Executor funksiyasi ichida shart tekshirilayapti. Agar shart rost baholansa promise qiymati sifatida _'muvaffaqiyatli_qiymat'_, aks holatda _'rad_etilganlik_sababi'_ matnlari qaytarilayapti.
 
 Bizning misolda promise'ning pending holati sinxron tarzda oddiy shart operatori orqali baholanayapti. Real loyihalarda bu asinxron operatsiyalar orqali amalga oshadi. Misol tariqasida database'dan biror ma'lumotlarni olishni keltirish mumkin.
 
@@ -150,7 +150,7 @@ Yuqoridagi misolda natija `num` o'zgaruvchisi oladigan qiymatga bog'liqdir.
 
 Agar num o'zgaruvchisi qiymati 0.5 dan kichik bo'lsa, `if` operatori bajariladi va uning ichidagi `resolve()` funksiyasi chaqiriladi. _resolve()_ funksiya chaqirildi degani, promise'ning holati o'zgardi deganidir. Ya'ni _pending_ holatdan _fulfilled_ holatga o'tdi degani. Va bu holatning qiymatini _resolve()_ funkiyasiga argument sifatida berib qaytarilyapti.
 
-Agar num o'zgaruvchisi 0.5 dan kichik bo'lmaydigan bo'lsa, u holda `else` operatori bajariladi va uning ichidagi `reject()` funksiyasi chaqiriladi. Bunda ham _reject()_ funksiya chaqirildi degani, promise'ning holati o'zgardi deganidir. Ya'ni _pending_ holatdan _rejected_ holatiga o'tdi degani. Va bu holatning qiymati(rad etilganlik sababi)ni _reject()_ funksiyaga argument sifatida beril qaytarilyapti.
+Agar num o'zgaruvchisi 0.5 dan kichik bo'lmaydigan bo'lsa, u holda `else` operatori bajariladi va uning ichidagi `reject()` funksiyasi chaqiriladi. Bunda ham _reject()_ funksiya chaqirildi degani, promise'ning holati o'zgardi deganidir. Ya'ni _pending_ holatdan _rejected_ holatiga o'tdi degani. Va bu holatning qiymati(rad etilganlik sababi)ni _reject()_ funksiyaga argument sifatida berib qaytarilyapti.
 
 Bizning misolda ikkala resolve() va reject() funksiyalari qaytaradigan qiymat, promise'ning qiymati ham bo'ladi.
 
@@ -160,7 +160,7 @@ _then()_ metodidagi 1 - parametr funksiya qachonki promise holati fulfilled hola
 
 Shu sababli bu funksiyalar tartibi muhim hisoblanadi.
 
-Qulaylik yaratish maqsadida bu ikkala paramertni ajratib yozish usuli kiritilgan. Buning uchun bizga _then_ ga o'xshash boshqa metod kerak bo'ladi. Bu metod nomini `catch()` deb nomlashgan. catch() metodi rejected qiymatlar bilan ishlash uchun mo'ljallangan.
+Qulaylik yaratish maqsadida bu ikkala paramertlarni ajratib yozish usuli kiritilgan. Buning uchun bizga _then_ ga o'xshash boshqa metod kerak bo'ladi. Bu metod nomini `catch()` deb nomlashgan. catch() metodi rejected qiymatlar bilan ishlash uchun mo'ljallangan.
 
 ```js
   ...
@@ -199,7 +199,7 @@ promise
   .catch((sabab) => console.log(sabab));
 ```
 
-JavaScriptda shunaqa uzun bog'lanishlarni tagma - tag yozish imkoniyati kiritilgan. Va u usul yuqorida ham ishlatildi.
+JavaScriptda promise chaining'larni tagma - tag yozish imkoniyati kiritilgan va u yuqorida ham ishlatildi.
 
 > Yuqoridagi misolda catch() metodi, har ikkala promise'ning birortasi rejected holatga o'tganda chaqiriladi va shu promise'dan keyingi then() metodlarning bajarilishi to'xtatiladi.
 
@@ -230,23 +230,37 @@ async function myFunc() {
   return "biror qiymat";
 }
 
-myFunc().then((qiymat) => console.log(qiymat));
+myFunc().then((qiymat) => console.log(qiymat)); // biror qiymat
 ```
 
 Yuqoridagi misolda biz async kalit so'zidan foydalandik-u, lekin await kalit so'zidan foydalanmadik. Aslida async har doim await kalit so'zi bilan birga keladi. Ya'ni foydali ish qiladigan asinxron funksiya yaratayapmizmi bu funksiya oldiga async kalit so'zini qo'yishimiz va uni ichda await'dan foydalanishimiz kerak bo'ladi.
 
-`await` - ham o'zi bir operator hisoblanadi. Bu operator bizga promise'ning resolved qiymatini qaytarib beradi.
+`await` - ham o'zi bir operator hisoblanadi. Bu operator odatda promise'lar bilan ishlatiladi va shu promise'ning resolved qiymatini qaytaradi.
+
+Quyida ma'lum vazifani 2 xil yo'l orqali bajarish ko'rsatilgan.
 
 ```js
-async function myFunc() {
-  const qiymat = await "biror qiymat";
-  return qiymat;
-}
+// 1 - yo'l
 
-myFunc().then((qiymat) => console.log(qiymat));
+fetch('url').then((response) => console.log(response));
+
+console.log('keyingi amallar'); // bu amal har doim bajariladi
+ ...
 ```
 
-Bundan tashqari await operatori promise holati pending holatdan boshqa holatga o'tgangacha jarayonni to'xtatib turish vazifasini ham bajaradi. Shuning uchun ham async funksiyalarda await kalit so'zidan foydalanishni esdan chiqmaslik muhimdir.
+```js
+// 2 - yo'l
+
+const response = await fetch('url');
+console.log(response);
+
+console.log('keyingi amallar'); // bu amalni bajarilishi response o'zgaruvchisi qiymatiga bog'liq 
+ ...
+```
+
+2 - holatning o'ziga xosligi shundaki, await operatoridan keyin kelayotgan amallar await operatori qaytaradigan qiymatga bog'liqligidadir. Agar await _error_ qaytarmasa, await'dan keyingi amallar bajariladi aks holda bajarilmaydi.
+
+Boshqacha aytganda await operatori promise holati pending holatdan boshqa holatga o'tgungacha jarayonni to'xtatib turish vazifasini ham bajaradi. Shuning uchun ham async funksiyalarda await kalit so'zidan foydalanishni esdan chiqmaslik muhimdir.
 
 ```js
 const myPromise = () => {
@@ -258,12 +272,12 @@ const myPromise = () => {
 };
 
 async function awaitBilan() {
-  const natija = await meningPromise();
+  const natija = await myPromise();
   console.log(natija);
 }
 
 async function awaitSiz() {
-  const natija = meningPromise();
+  const natija = myPromise();
   console.log(natija);
 }
 
@@ -344,7 +358,7 @@ async function maxsusSintaks() {
 
 Ko'rib turganizdek 2 - usulda kod yozish ancha qulaylik yaratadi.
 
-async funksiyasi ham oddiy bir promise qaytarib beruvchi funksiya ekanligini hisobga olsak, biz promise rad etilish sabablarini o'sha odatiy `catch()` metodi orqali tutsak ham bo'ladi.
+async funksiyasi ham oddiy bir promise qaytarib beruvchi funksiya ekanligini inobatga olsak, biz promise rad etilish sabablarini o'sha odatiy `catch()` metodi orqali tutsak ham bo'ladi.
 
 ```js
 async function xatoniTutish() {
