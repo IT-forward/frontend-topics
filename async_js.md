@@ -55,17 +55,17 @@ console.log("4 - chiqadi");
 
 Biz yuqorida sinxron va asinxron funksiyalar bilan tanishdik. Endi **asinxron** funksiya ishlash prinsipi asosida qurilgan metodlardan biri [**Promise**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) lar bilan tanishamiz.
 
-Tasavvur qiling siz sherigingiz bilan restorantga kirdingiz va biror bo'sh joyga o'tirdingiz. Keyin ofitsiyant sizdan buyurtma olish uchun keldi. Siz biror taom buyurtma berdingiz. Ofitsiyant sizning buyurtmangizni o'z daftarchasiga yozdi va oshxona tomon yo'l oldi. Endi siz buyurtmangiz kelmagungacha joyingizdan turmay, hech kimga gapirmay, faqat oshxona tomonga qarab, ofitsiyantni kutib o'tirasizmi? Albatta yo'q. Siz sherigingiz bilan suhbatlashib, derazadan ko'chaga qarab o'tirasiz. Ma'lum muddatdan so'ng ofitsiyant buyurtmangizni olib keladi. Va sizga yoqimli ishtaxa tilab, o'z ishini davom ettiradi.
+Tasavvur qiling siz sherigingiz bilan restoranga kirdingiz va biror bo'sh joyga o'tirdingiz. Keyin ofitsiant sizdan buyurtma olish uchun keldi. Siz biror taom buyurtma berdingiz. Ofitsiant sizning buyurtmangizni o'z daftarchasiga yozdi va oshxona tomon yo'l oldi. Endi siz buyurtmangiz kelmagungacha joyingizdan turmay, hech kimga gapirmay, faqat oshxona tomonga qarab, ofitsiantni kutib o'tirasizmi? Albatta yo'q. Siz sherigingiz bilan suhbatlashib, derazadan ko'chaga qarab o'tirasiz. Ma'lum muddatdan so'ng ofitsiant buyurtmangizni olib keladi. Va sizga yoqimli ishtaxa tilab, o'z ishini davom ettiradi.
 
-Sizni buyurtma kelgunigacha sherigingiz bilan suhbatlashgan va derazadan ko'chaga qaragan amallaringiz **sinxron** amallar hisoblanadi. Sizni ofitsiyantga taom buyurtma qilishingiz esa **asinxron** amal hisoblanadi va u **promise** deb nomlanadi.
-Ofitsiyant sizga olib kelib bergan _taom_ esa promise _qiymat_ i hisoblanadi.
+Sizni buyurtma kelgunigacha sherigingiz bilan suhbatlashgan va derazadan ko'chaga qaragan amallaringiz **sinxron** amallar hisoblanadi. Sizni ofitsiantga taom buyurtma qilishingiz esa **asinxron** amal hisoblanadi va u **promise** deb nomlanadi.
+Ofitsiant sizga olib kelib bergan _taom_ esa promise _qiymat_ i hisoblanadi.
 
-Endi tasavvur qiling sizni ofitsiyantga buyurtma qilgan taomingiz har doim ham oshxonada mavjud bo'lmasligi mumkin. Shunda ofitsiyant nima qiladi? Ofitsiyant kelib sizga oshxonada bu taom qolmaganligi sabab buyurtmangizni olib kelolmaganini aytadi va sizga boshqa biror taom buyurtma qilishingizni taklif qiladi.
+Endi tasavvur qiling sizni ofitsiantga buyurtma qilgan taomingiz har doim ham oshxonada mavjud bo'lmasligi mumkin. Shunda ofitsiant nima qiladi? Ofitsiant kelib sizga oshxonada bu taom qolmaganligi sabab buyurtmangizni olib kela olmaganini aytadi va sizga boshqa biror taom buyurtma qilishingizni taklif qiladi.
 
 Biz yuqoridagi misolda promise qaysi amal ekanligini aytdik. Bundan ko'rinib turibdiki promise uch xil holatdan birida bo'lar ekan.
-1 - holat: ofitsiyant sizdan buyurtmani olib, oshxonaga borib, yana qaytib kelish holati.
-2 - holat: ofitsiyant sizga taomingizni olib kelishi mumkin bo'lgan holat.
-3 - holat: oshxonada siz buyurtma qilgan taom bo'lmaganligi sababli, ofitsiyant buyurmangizni olib kelolmagan holat.
+1 - holat: ofitsiant sizdan buyurtmani olib, oshxonaga borib, yana qaytib kelish holati.
+2 - holat: ofitsiant sizga taomingizni olib kelishi mumkin bo'lgan holat.
+3 - holat: oshxonada siz buyurtma qilgan taom bo'lmaganligi sababli, ofitsiant buyurmangizni olib kela olmagan holat.
 
 Shunday qilib promise __uch xil holat__ dan birida bo'lar ekan. Bular:
 
