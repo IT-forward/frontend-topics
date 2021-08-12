@@ -1,5 +1,7 @@
 # Polyfilling va Transpilling
 
+![Polyfill vs Transpiler](https://i.ibb.co/Jrkfv5f/Webp-net-resizeimage.png)
+
 ## Web Browser
 
 Barchamizga ma'lumki biz internet orqali biror veb saytga tashrif buyurmoqchi bo'lsak, bizga qandaydur dastur kerak bo'ladi va u [__web browser__](https://en.wikipedia.org/wiki/Web_browser) deb ataladi.
