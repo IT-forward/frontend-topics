@@ -35,7 +35,8 @@ if (!Array.prototype.map) {
         const res = [];
 
         for (let i = 0; i < len; i++) {
-            res.push(func(arr[i]));
+            // second argument is optional for func
+            res.push(func(arr[i], i));
         }
 
         return res;
