@@ -8,11 +8,11 @@ Bu so'zni inglizchadan o'zbekchaga tarjima qilganda ham aynan "muvofiqlik", "mos
 
 Agar siz kompyuteringiz orqali printerdan pechat chiqara olayotgan bo'lsangiz, sizning komputeringiz va printeringiz bir - biriga compatible(mos) bo'ladi. Yoki siz televizoringizni pult orqali boshqara olyapsizmi demak, bu ikki qurilma bir - biriga mos hisoblanadi.
 
-Bu tushunchani JavaScript'ga talqin qiladigan bo'lsak, JavaScript kodlari va Web Bowser'lar bir - biriga compatible'dir.
+Bu tushunchani JavaScript'ga talqin qiladigan bo'lsak, JavaScript kodlari va Web Browser'lar bir - biriga compatible'dir.
 
 Shunday qilib compatibility bu - ikkita narsani qanchalik bir - biriga mosligi ekan.
 
-O'z navbatida compatibility ikki guruhga bo'linadi. Bular **backward compatibility** va **forward compatibility**lar.
+Compatibility o'z navbatida biror kutubxona yoki dasturlash tiliga nisbatan qo'llanilganda u ikkiga ya'ni **backward compatibility** va **forward compatibility**'larga bo'linadi.
 
 ## Backward Compatibility
 
@@ -36,7 +36,7 @@ JavaScript dasturlash tili forward compatible bo'lishi uchun hozirda biz ishlati
 
 ![not forward](https://i.ibb.co/pWHtw7c/2021-08-25-16-07.png)
 
-Forward compatible tillarga markerlash va stillash tillarini, shu jumladan HTML va CSS tillarini keltirshimiz mumkin. Kelajakda bu tillarda yordamida yozilgan kodni bemalol hozirgi browserlar orqali ochsa bo'ladi. Bunda browser yuklanishida muammolar kuzatilmaydi. Lekin kelajakda javascriptda yordamida yozilgan kodni hozirgi browserlarda ochsak katta ehtimol bilan browser yuklanishida muammolar yuzaga keladi. Bu shu tilda yangi texnologiya qo'shilgan yoki qo'shilmaganligiga bog'liq.
+Forward compatible tillarga markerlash va stillash tillarini, shu jumladan HTML va CSS tillarini keltirshimiz mumkin. Kelajakda bu tillar yordamida yozilgan kodni bemalol hozirgi browserlar orqali ochsa bo'ladi. Bunda browser yuklanishida muammolar kuzatilmaydi. Lekin kelajakda javascript yordamida yozilgan kodni hozirgi browserlarda ochsak katta ehtimol bilan browser yuklanishida muammolar yuzaga keladi. Bu shu tilda yangi texnologiya qo'shilgan yoki qo'shilmaganligiga bog'liqdir.
 
 HTML va CSS nima uchun forward compatible ekanligini aytadigan bo'lsak, sababi bu tillar dasturlash tillari hisoblanmaydi.
 
