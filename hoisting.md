@@ -1,5 +1,7 @@
 # JavaScript Hoisting
 
+![hoisting](https://i.ibb.co/rwJ3DRn/image2vector.png)
+
 ## Declaration
 
 Javascriptda declaration bu - o'zgaruvchilarni e'lon qilinishi.
