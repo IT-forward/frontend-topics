@@ -229,9 +229,9 @@ O'ylaymanki yuqoridagi na'munalar sizga tushunarli bo'ldi.
 
 ## Xulosa
 
-- **temporal dead zone** bu shunday hudud ekanki bu hududdagi o'zgaruvchilar uchun xotiradan joy ajratilgan, lekin ularga hech qanday qiymat berilmagan ekan. Shu sababli js engine bu o'zgaruvchilarni o'qish huquqiga ega emas ekan.
+- **temporal dead zone** - bu shunday hudud ekanki bu hududdagi o'zgaruvchilar uchun xotiradan joy ajratilgan, lekin ularga hech qanday qiymat berilmagan ekan. Shu sababli js engine bu o'zgaruvchilarni o'qish huquqiga ega emas ekan.
 
-- **hoisting** bu js engine kodimizni o'qishidan avval bo'ladigan jarayon bo'lib, bu jarayon o'zgaruvchilar uchun xotiradan joy ajratish jarayoni ekan.
+- **hoisting** - bu js engine kodimizni o'qishidan avval bo'ladigan jarayon bo'lib, bu jarayon o'zgaruvchilar uchun xotiradan joy ajratish jarayoni ekan.
 
 - hoisting `var` kalit so'zi bilan bo'lganda, xotiradan ajratilgan o'zgaruvchiga boshlang'ich qiymat sifatida `undefined` qiymati berilar ekan.
 
