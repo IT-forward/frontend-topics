@@ -2,7 +2,7 @@
 
 ![hoisting](https://i.ibb.co/rwJ3DRn/image2vector.png)
 
-## Declaration
+## Declarations
 
 Javascriptda declaration bu - o'zgaruvchilarni e'lon qilinishi.
 
@@ -51,23 +51,23 @@ Siz ertasi kuni ham do'stingizga quti olib bordingiz. Bu safar quti ichiga hech 
 
 Biz yuqorida o'zgaruvchi e'lon qilinganda unga xotiradan ma'lum joy ajratilishi haqida aytgan edik. Bu joyni biz xuddi qutiga o'xshatsak bo'ladi. O'zgaruvchiga biror qiymat berganimizda qiymat o'sha quti ichiga solib qo'yiladi.
 
-Endi tasavvur qiling siz o'zgaruvchi yaratdingiz-u, lekin unga qiymat bermasdan turib, `console.log(..)` orqali js engine'dan o'zgaruvchi qiymatini konsolga chiqarishini so'radingiz. JS engine xuddi do'stingiz tushgan holatga tushadi va bechora konsolga nima chiqarishini bilmay, oxiri error chiqarib yuboradi.
+Endi tasavvur qiling siz o'zgaruvchi yaratdingiz-u, lekin unga qiymat bermasdan turib, `console.log(..)` orqali js engine'dan o'zgaruvchi qiymatini console'ga chiqarishini so'radingiz. Shunda JS engine xuddi do'stingiz tushgan holatga tushadi va bechora console'ga nima chiqarishini bilmay, oxiri error chiqarib yuboradi.
 
-Siz aytishingiz mumkin bunday holatlarda engine konsolga `undefined` yoki bo'sh matn (`''`) chiqarsa bo'lmaydimi deb. Yo'q, engine unday qila olmaydi. Sababi javascript'da `undefined` ham bo'sh matn (`''`) ham qiymatni bir turi hisoblanadi.
+Siz aytishingiz mumkin bunday holatlarda engine console'ga `undefined` yoki bo'sh matn (`''`) chiqarsa bo'lmaydimi deb. Yo'q, engine unday qila olmaydi. Sababi javascript'da `undefined` ham bo'sh matn (`''`) ham qiymatni bir turi hisoblanadi.
 
 Bunday o'zgaruvchilar **Temporal Dead Zone** o'zgaruvchilar deyiladi. JS engine bu o'zgaruvchilarni xotirada bor - yo'qligini ko'rish, ularga yangi qiymat yozish huquqlariga ega, lekin ularni o'qish huquqiga ega emas.
 
-> Eslatma: bu maqolada javascript kodimizni o'qiydigan engine web borwoser deb qaraladi.
+> Eslatma: bu maqolada javascript kodimizni o'qiydigan engine web browser deb qaraladi.
 
 ## Hoisting
 
 Hoisting bu - javascript engine kodni o'qishidan oldin bajariladigan jarayon bo'lib, bunda har bir declaration o'z scope(aniqlanish sohasi)ini yuqorisiga joylashtiriladi.
 
-Ya'ni js engine avval har bir scope'da uning barcha o'zgaruvchilari uchun xotiradan joy ajratib oladi. Bu jarayon tugagandan so'ng engine qaytib declaration kodlarga qaramaydi va kodni tepadan pastga qarab o'qiy boshlaydi.
+Aniqroq qilib aytadigan bo'lsak, js engine avval har bir scope'da uning barcha o'zgaruvchilari uchun xotiradan joy ajratib oladi. Bu jarayon tugagandan so'ng, engine qaytib declaration kodlarga qaramaydi va kodni tepadan pastga qarab o'qiy boshlaydi.
 
 Keling endi hoisting'ni har bir declaration turlari uchun ko'rib chiqamiz.
 
-#### Hoisting var kalit so'zi bilan
+#### Hoisting `var` kalit so'zi bilan
 
 Hoisting jarayoni `var` kalit so'zi orqali hosil qilingan o'zgaruvchi bilan bo'lganda, js engine dastlab o'zgaruvchi uchun xotiradan joy ajratib oladi va unga default(boshlang'ich) `undefined` qiymat beradi. So'ng scope ichidagi kodlarni o'qishni boshlaydi.
 
@@ -90,9 +90,9 @@ var name;
 Yuqoridagi kodda hech qanday `ReferenceError` sodir bo'lmaydi. Sababi `console.log()` funktsiyasi xotirada `name` o'zgaruvchisi borligini ko'ra oladi.
 
 ReferenceError odatda xotirada mavjud bo'lmagan o'zgaruvchiga murojaat qilinganda sodir bo'ladi.
-Bizda esa hoisting jarayonida allaqachon `name` o'zgaruvchisi xotirada yaratilib bo'lingan bo'ladi.
+Bizda esa hoisting jarayonida allaqachon `name` o'zgaruvchisi xotirada yaratilib bo'lingan.
 
-Quyidagi kod ham hoisting ga bir misol bo'la oladi.
+Quyidagi kod ham hoisting'ga bir misol bo'la oladi.
 
 ```js
 name = "Husan";
@@ -101,7 +101,7 @@ console.log(name); // Husan
 var name;
 ```
 
-#### Hoisting let kalit so'zi bilan
+#### Hoisting `let` kalit so'zi bilan
 
 Hoisting jarayoni `let` kalit so'zi orqali hosil qilingan o'zgaruvchi bilan bo'lganda, js engine dastlab o'zgaruvchi uchun xotiradan joy ajratib oladi, lekin unga hech qanday boshlang'ich qiymat bermaydi. Ya'ni xotira bo'sh qoldiriladi. So'ng scope ichidagi kodlarni o'qishni boshlaydi.
 
@@ -111,11 +111,11 @@ console.log(name); // ReferenceError: Cannot access 'name' before initialization
 let name;
 ```
 
-Yuqoridagi kodda `ReferenceError` chiqishini sababi `name` o'zgaruvchisini xotirada qiymati mavjud emasligidadir. Yoqoridagi error'da ham aynan shu narsa aytilyapti.
+Yuqoridagi kodda `ReferenceError` chiqishini sababi `name` o'zgaruvchisini xotirada qiymati mavjud emasligidadir. ReferenceError'da ham aynan shu narsa aytilayapti.
 
-To'liqroq qilib aytadigan bo'lsak, bu o'zgaruvchi yuqirida aytib o'tilgan **temporal dead zone** o'zgaruvchidir.
+Aniqroq qilib aytadigan bo'lsak, bu o'zgaruvchi yuqirida aytib o'tilgan **temporal dead zone** o'zgaruvchidir.
 
-Quyida hoisting ga yana bir misol ko'rishingiz mumkin.
+Quyida hoisting'ga yana bir misol ko'rishingiz mumkin.
 
 ```js
 console.log(name); // ReferenceError: Cannot access 'name' before initialization
@@ -125,7 +125,7 @@ console.log(name); // Husan
 let name;
 ```
 
-#### Hoisting const kalit so'zi bilan
+#### Hoisting `const` kalit so'zi bilan
 
 `const` kalit so'zi bilan hoisting xuddi `let` kalit so'zi bilan bo'lgani kabi bo'ladi.
 
@@ -143,7 +143,7 @@ Yuqoridagi misolda qiziq bir holatni kuzatishimiz mumkin. Biz bilamiz `const` o'
 
 Sababi shuki `var`, `let`, `const` kalit so'zlari bilan hoisting bo'lganda, o'zgaruvchi uchun faqat xotiradan joy ajratilishi, assignment(qiymat berish) operatorlar esa kodda o'z kelish tartibida bajarilishidadir.
 
-Yuqoridagi kodda assignment statement conole.log() statement'dan keyin kelmoqda. Shuning ushun ham `name` o'zgaruvchisi hali temporal dead zone ichida.
+Yuqoridagi kodda assignment statement _conole.log()_ statement'dan keyin kelmoqda. Shuning ushun ham `name` o'zgaruvchisi hali _temporal dead zone_ ichida.
 
 ### Hoisting function declaration bilan
 
@@ -159,7 +159,7 @@ function greet() {
 greet(); // Assalomu alaykum!
 ```
 
-Yoqoridagi kodda funktsiyani e'lon qilishimiz ham, funktsiyaga qiymat berishimiz ham funktsiyani chaqirishimizdan oldin bo'layapti. O'ylaymanki siz nima uchun yuqoridagi kodda `// Assalomu alaykum!` chiqayotgan ekanligini tushundingiz.
+Yuqoridagi kodda funktsiyani e'lon qilishimiz ham, funktsiyaga qiymat berishimiz ham funktsiyani chaqirishimizdan oldin bo'layapti. Shuning uchun o'ylaymanki siz nima uchun yuqoridagi kodda `// Assalomu alaykum!` chiqayotgan ekanligini tushundingiz.
 
 ```js
 console.log(greet); // ƒ greet() { console.log("Assalomu alaykum!"); }
@@ -170,9 +170,9 @@ function greet() {
 }
 ```
 
-Yuqoridagi kodda `greet` o'zgaruvchisi qiymati chiqarilganda `undefined` chiqmaganligiga sabab, hoisting jarayonida bu o'zgaruvchiga boshlang'ich qiymat sifatida funktsiya qiymati berib yuborilganligidadir.
+Yuqoridagi kodda `greet` o'zgaruvchisining qiymati console'ga chiqarilganda `undefined` chiqmaganligiga sabab, hoisting jarayonida bu o'zgaruvchiga boshlang'ich qiymat sifatida funktsiya qiymati berib yuborilganligidadir.
 
-Bundan shuni anglash mumkinki function declaration orqali yaratilgan funktsiyani, unga tegishli scope ichida uni istalgan joyda chaqirish mumkin ekan.
+Bundan shuni anglash mumkinki, _function declaration_ orqali yaratilgan funktsiyani unga tegishli scope ichida, uni istalgan joyda chaqirish mumkin ekan.
 
 ### Hoisting function expression bilan
 
@@ -190,7 +190,7 @@ const greet = function () {
 
 function expression aslida `var`, `let`, `const` kalit so'zlaridan biri orqali yaratilgan o'zgaruvchi bo'lib, unga qiymat sifatida funktsiya berilgan ekanligini inobatga olsak, function expression bilan hoisting xuddi `var`, `let`, `const` bilan bo'lgani kabi bo'ladi.
 
-Keling uchala halat uchun ham hoisting ni ko'rib chiqamiz.
+Keling uchala halat uchun ham hoisting'ni ko'rib chiqamiz.
 
 `var` kalit so'zi bilan
 
@@ -237,6 +237,6 @@ O'ylaymanki yuqoridagi na'munalar sizga tushunarli bo'ldi.
 
 - hoisting `let` va `const` kalit so'zlari bilan bo'lganda, xotiradan ajratilgan o'zgaruvchiga boshlang'ich qiymat sifatida hech narsa berilmas ekan va bu o'zgaruvchi temporal dead zone da bo'lar ekan.
 
-- hoisting function declaration orqali bo'lganda, xotiradan ajratilgan o'zgaruvchiga boshlang'ich qiymat sifatida funktsiya qiymati berib yuborilar ekan. Shu tufayli bunday funktsiyalarni scope ni istalgan joyida chaqish mumkin ekan.
+- hoisting function declaration orqali bo'lganda, xotiradan ajratilgan o'zgaruvchiga boshlang'ich qiymat sifatida funktsiya qiymati berib yuborilar ekan. Shu tufayli bunday funktsiyalarni scope'ni istalgan joyida chaqish mumkin ekan.
 
-- hoisting function expression orqali bo'lganda jarayon xuddi `var`, `let`, `const` dan birida bo'lgani kabi kechar ekan. Bu shu funktsiya qaysi kalit so'z bilan e'lon qilinishiga bog'liq ekan.
+- hoisting function expression orqali bo'lganda, jarayon xuddi `var`, `let`, `const` dan birida bo'lgani kabi kechar ekan va bu shu funktsiya qaysi kalit so'z bilan e'lon qilinishiga bog'liq ekan.
