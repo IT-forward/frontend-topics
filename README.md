@@ -1,6 +1,6 @@
-# JS va Frontend haqida o‘zbekcha maqolalar
+# JavaScript va Frontend haqida o‘zbekcha maqolalar
 
-Bu yerda JS va frontendning muhim mavzulari haqida yozamiz.
+Bu yerda JavaScript va frontendning muhim mavzulari haqida yozamiz.
 Ayni paytda yangi e'lon qilingan maqolalarni quyidagi manbalarda o'qib borishingiz mumkin:
 
 - Telegram: [@IT_forward](https://t.me/IT_forward)
