@@ -1,4 +1,4 @@
-# JS SCOPE
+# JAVASCRIPT SCOPE
 
 ![scope](https://i.ibb.co/jhKJwm7/scope.jpg)
 
@@ -19,16 +19,16 @@ greet(); // Assalomu alaykum Husan!
 console.log(name); // ReferenceError: name is not defined
 ```
 
-Ko'rib turganingizdek `name` o'zgaruvchi faqat o'zini scope'i (`{}`) ichidagina yaroqli bo'lib, scope'dan tashqarida esa javascript uni tanimaydi.
+Ko'rib turganingizdek `name` o'zgaruvchisi faqat o'zini scope'i (`{}`) ichidagina yaroqli bo'lib, scope'dan tashqarida esa javascript uni tanimaydi.
 
 JavaScript'da scope'lar ta'sir maydoniga ko'ra ikkiga bo'linadi.
 
 - Ichki scope
 - Tashqi scope
 
-Agar berilgan o'zgaruvchi biror scope ichida e'lon qilingan bo'lsa, bu scope berilgan o'zgaruvchi uchun ichki scope hisoblanadi.
+Agar berilgan o'zgaruvchi biror scope ichida e'lon qilinadigan bo'lsa, bu scope berilgan o'zgaruvchi uchun ichki scope hisoblanadi.
 
-Agar berilgan o'zgaruvchi biror scope tashqarisida e'lon qilingan bo'lsa, bu scope berilgan o'zgaruvchi uchun tashqi scope hisoblanadi.
+Agar berilgan o'zgaruvchi biror scope tashqarisida e'lon qilinadigan bo'lsa, bu scope berilgan o'zgaruvchi uchun tashqi scope hisoblanadi.
 
 ```js
 function login(parol) {
@@ -48,13 +48,13 @@ login("12345"); // Muvaffaqiyatli!
 
 Yuqoridagi misolda `password` o'zgaruvchisi `if` va `else` statement larning har biri uchun tashqi scope o'zgaruvchi hisoblanadi. Sababi `password` o'zgaruvchisi `if` va `else` scope laridan tashqarida e'lon qilinayapti.
 
-`successMessage` o'zgaruvchisi esa `if` statement uchun ichki scope o'zgaruvchi hisoblanadi. Shuningdek, `failMessage` o'zgaruvchisi `else` statement uchun ichki scope o'zgaruvchi hisoblanadi. Sababi bu o'zgaruvchilar o'zlarining statement lari ichida e'lon qilingan.
+`successMessage` o'zgaruvchisi esa `if` statement uchun ichki scope o'zgaruvchi hisoblanadi. Shuningdek, `failMessage` o'zgaruvchisi ham `else` statement uchun ichki scope o'zgaruvchi hisoblanadi. Sababi bu o'zgaruvchilar o'zlarining statement lari ichida e'lon qilingan.
 
 Inglizchada ichki scope `local scope`, tashqi scope esa `global scop` deb yuritiladi.
 
 JavaScript'da scope'lar ichma - ich qo'llanila olishini inobatga olsak, bu atamalar (local va global scope) aslida nisbiy atamalar ekanligini payqashimiz mumkin.
 
-Umuman olganda butun boshli javascript kodni bitta scope ichida joylashgan deb qarash mumkin. Bu scope js koddagi qolgan barcha scope'lar uchun qat'iy global scope hisoblanadi.
+Umuman olganda butun boshli javascript kodni bitta scope ichida joylashgan deb qarash mumkin. Va bu scope js koddagi qolgan barcha scope'lar uchun qat'iy global scope hisoblanadi.
 
 Shunga ko'ra yuqoridagi misolni quyidagicha ham yozish mumkin.
 
