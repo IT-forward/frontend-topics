@@ -1,4 +1,4 @@
-# JAVASCRIPT SCOPE
+# JavaScript Scope
 
 ![scope](https://i.ibb.co/jhKJwm7/scope.jpg)
 
