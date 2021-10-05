@@ -4,9 +4,17 @@
 
 Javascriptda declaration bu - o'zgaruvchilarni e'lon qilinishi.
 
-O'zgaruvchi e'lon qilindi degani kompyuter xotirasidan unga joy ajratildi degani.
+O'zgaruvchi e'lon qilindi degani kompyuter xotirasidan unga joy ajratildi degani. O'zgaruvchi xotirada mavjud degani uning qiymatini javascript kodda qayta - qayta ishlatsa bo'ladi degani.
 
-## Variable Declaration
+```js
+let name = 'Ali';
+
+console.log(name); // 1 - marta ishlatilishi
+console.log('Salom' + name); // 2 - marta ishlatilishi
+...
+```
+
+## Variable Declarations
 
 Variable declaration bu - o'zgaruvchilarni e'lon qilinishi.
 
@@ -21,11 +29,11 @@ let name;
 const name;
 ```
 
-## Function Declaration
+## Function Declarations
 
 Function declaration bu - funktsiyalarni e'lon qilinishi.
 
-Funktsiyalarni esa 2 xil usulda e'lon qilishimiz mumkin.
+JavaScript'da esa funktsiyalarni 2 xil usulda e'lon qilishimiz mumkin.
 
 ```js
 // function declaration
@@ -39,18 +47,8 @@ const greet = function () {
 };
 ```
 
-# Temporal Dead Zone
+## Xulosa
 
-Tasavvur qiling sizda bir bo'sh quti bor. Siz shu qutiga bir dona olma solib, do'stingizga olib bordingiz. So'ng do'stingizdan qutini ochib, uni ichidagi narsalarni qutidan tashqariga chiqarishini so'radingiz. Tabiiyki do'stingiz quti ichidan bir dona olma olib chiqaradi.
+- JavaScript'da o'zgaruvchilarni e'lon qilish `var`, `let`, `const` kalit so'zlaridan biri orqali amalga oshiriladi.
 
-Siz ertasi kuni ham do'stingizga quti olib bordingiz. Bu safar quti ichiga hech narsa solmadingiz. Va do'stingizdan yana uni ichini ochib, uni ichidagi narsalarni undan tashqariga chiqarishini so'radingiz. Shunda do'stingiz quti ichidan hech narsa olib chiqara olmaydi.
-
-Biz yuqorida o'zgaruvchi e'lon qilinganda unga xotiradan ma'lum joy ajratilishi haqida aytgan edik. Bu joyni biz xuddi qutiga o'xshatsak bo'ladi. O'zgaruvchiga biror qiymat berganimizda qiymat o'sha quti ichiga solib qo'yiladi.
-
-Endi tasavvur qiling siz o'zgaruvchi yaratdingiz-u, lekin unga qiymat bermasdan turib, `console.log(..)` orqali js engine'dan o'zgaruvchi qiymatini console'ga chiqarishini so'radingiz. Shunda JS engine xuddi do'stingiz tushgan holatga tushadi va bechora console'ga nima chiqarishini bilmay, oxiri error chiqarib yuboradi.
-
-Siz aytishingiz mumkin bunday holatlarda engine console'ga `undefined` yoki bo'sh matn (`''`) chiqarsa bo'lmaydimi deb. Yo'q, engine unday qila olmaydi. Sababi javascript'da `undefined` ham bo'sh matn (`''`) ham qiymatni bir turi hisoblanadi.
-
-Bunday o'zgaruvchilar **Temporal Dead Zone** o'zgaruvchilar deyiladi. JS engine bu o'zgaruvchilarni xotirada bor - yo'qligini ko'rish, ularga yangi qiymat yozish huquqlariga ega, lekin ularni o'qish huquqiga ega emas.
-
-> Eslatma: bu maqolada javascript kodimizni o'qiydigan engine web browser deb qaraladi.
+- JavaScript'da funktsiyalarni e'lon qilish 2 xil usulda amalga oshirilishi mumkin: **function declaration** va **function expression**.
