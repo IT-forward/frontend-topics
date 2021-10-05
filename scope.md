@@ -50,7 +50,7 @@ Yuqoridagi misolda `password` o'zgaruvchisi `if` va `else` statement larning har
 
 `successMessage` o'zgaruvchisi esa `if` statement uchun ichki scope o'zgaruvchi hisoblanadi. Shuningdek, `failMessage` o'zgaruvchisi ham `else` statement uchun ichki scope o'zgaruvchi hisoblanadi. Sababi bu o'zgaruvchilar o'zlarining statement lari ichida e'lon qilingan.
 
-Inglizchada ichki scope `local scope`, tashqi scope esa `global scop` deb yuritiladi.
+Inglizchada ichki scope `local scope`, tashqi scope esa `global scope` deb yuritiladi.
 
 JavaScript'da scope'lar ichma - ich qo'llanila olishini inobatga olsak, bu atamalar (local va global scope) aslida nisbiy atamalar ekanligini payqashimiz mumkin.
 
