@@ -2,7 +2,7 @@
 
 ![scope](https://i.ibb.co/jhKJwm7/scope.jpg)
 
-O'tgan maqolada sizlar bilan o'zgaruvchilarni e'lon qilish ([declarations]()) haqida gaplashgan edik.
+O'tgan maqolada sizlar bilan o'zgaruvchilarni e'lon qilish ([declarations](https://github.com/IT-forward/frontend-topics/blob/main/declarations.md)) haqida gaplashgan edik.
 
 Bu maqolada esa sizlar bilan bu o'zgaruvchilardan qayerlarda foydalanib bo'ladiyu, qayerlarda foydalanib bo'lmaydi, shu haqida gaplashamiz.
 
