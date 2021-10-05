@@ -21,11 +21,11 @@ Variable declaration bu - o'zgaruvchilarni e'lon qilinishi.
 Hozirgi paytda o'zgaruvchilarni 3 xil e'lon qilsa bo'ladi.
 
 ```js
-// with var keyword since ES1
+// ES1 dan buyon
 var name;
-// with let keyword since ES6
+// ES6 dan buyon
 let name;
-// with const keyword since ES6
+// ES6 dan buyon
 const name;
 ```
 
