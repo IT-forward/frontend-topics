@@ -27,7 +27,7 @@ console.log(num); // ReferenceError: num is not defined
 
 Ko'rib turganingizdek strict mode ishlatilganda yuqoridagi kamchilik bartaraf etiladi.
 
-> Eslatma: strict mode scope element hisoblanadi. Ya'ni uni aniqlanish sohasi scope bilan chegaralanadi.
+> Eslatma: strict mode [scope](https://github.com/IT-forward/frontend-topics/blob/main/scope.md) element hisoblanadi. Ya'ni uni aniqlanish sohasi scope bilan chegaralanadi.
 
 JavaScript tilining kamchiliklardan yana biri bu o'zgaruvchi nomi uchun unda oldindan band qilingan maxsus so'zlardan foydalanib bo'lishida.
 
