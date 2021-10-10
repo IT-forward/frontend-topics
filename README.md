@@ -1,3 +1,7 @@
+# Frontend topics in Uzbek language
+
+This repo is to share general knowledge of frontend with Uzbek language readers. So all docs and discussions are in Uzbek language.
+
 # JavaScript va Frontend haqida o‘zbekcha maqolalar
 
 Bu yerda JavaScript va frontendning muhim mavzulari haqida yozamiz.
@@ -7,5 +11,4 @@ Ayni paytda yangi e'lon qilingan maqolalarni quyidagi manbalarda o'qib borishing
 
 # Hissa qo‘shing
 
-- O‘zingiz xohlagan mavzu haqida maqola o‘qishni xohlasangiz, Issue yarating va biz uni yozishga qo‘ldan kelgancha harakat qilamiz.
-- Agar maqola yozish istagida bo‘lsangiz, "Issue" qismiga qarang va biror ochiq mavzuni tanlab yozing va "Pull Request" jo‘nating. Biz albatta ko‘rib chiqamiz.
+Agar ushbu loyihada ishtirok etish niyatida bo‘lsangiz, [Contributing.md](CONTRIBUTING.md) bilan tanishib chiqing.
