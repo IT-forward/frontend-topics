@@ -34,7 +34,7 @@ const pi = 3.14;
 
 Function declaration bu - funktsiyalarni e'lon qilinishi.
 
-JavaScript'da esa funktsiyalarni 2 xil usulda e'lon qilishimiz mumkin.
+JavaScript'da funktsiyalarni 2 xil usulda e'lon qilishimiz mumkin. **function declaration** va **function expression**
 
 ```js
 // function declaration
