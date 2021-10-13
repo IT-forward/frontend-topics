@@ -38,6 +38,14 @@ var num; // Declaration
 num = 6; // Initialization
 ```
 
+Quyida `let` o'zgaruvchisi Temporal Dead Zone ichida
+
+```js
+console.log(num); // ReferenceError
+let num; // Declaration
+num = 6; // Initialization
+```
+
 Quyidagi kodda o'zgaruvchi faqat initializatsiya qilinayapti, lekin declare qilinmayapti. Shu sababli bu o'zgaruvchi bilan hoisting jarayoni sodir bo'lmaydi.
 
 ```js
@@ -52,7 +60,7 @@ Hoistingga namunalar:
 ```js
 // faqat y hoisting bo'ladi
 
-x = 1; // x initsializatsiya qilinayapti, lekin declaration emas.
+x = 1; // x initsializatsiya qilinayapti, lekin declare emas.
 console.log(x + " " + y); // 1 undefined
 
 var y = 2; // Declare and Initialize y
@@ -79,4 +87,4 @@ console.log(a + "" + b); // Cranberry
 
 - hoisting function declaration orqali bo'lganda, xotiradan ajratilgan o'zgaruvchiga boshlang'ich qiymat sifatida funktsiya qiymati berib yuboriladi. Shu sababli bunday funktsiyalarni scope'ni istalgan joyida chaqish mumkin.
 
-- hoisting function expression orqali bo'lganda, jarayon xuddi `var`, `let`, `const` dan birida bo'lgani kabi kechadi va bu shu funktsiya xususiyati u qaysi kalit so'z bilan e'lon qilinishiga bog'liq bo'ladi.
+- hoisting function expression orqali bo'lganda, jarayon xuddi `var`, `let`, `const` dan birida bo'lgani kabi kechadi va bu funktsiya xususiyati u qaysi kalit so'z bilan e'lon qilinishiga bog'liq bo'ladi.
