@@ -39,7 +39,7 @@ TDZ ga namunalar:
   // TDZ boshlanishi
   const func = () => console.log(letVar); // OK
 
-  // func(); -> `ReferenceError`
+  // func(); -> ReferenceError
 
   let letVar = 3; // letVar uchun TDZ ni tugashi
   func(); // 3 -> sababi letVar TDZ dan tashqarida chaqirildi
@@ -74,7 +74,7 @@ function go(n) {
 go({ a: [1, 2, 3] });
 ```
 
-Yuqoridagi misolda `n` o'zgaruvchisi `for` sikli uchun qayta yaratilayapti `let n = undefined;` va `n.a` orqali yaratilgan `n` o'zgaruvchisining `a` property'siga murojaat qilinayapti. Xolbuki, `n` o'zgaruvchisining `a` property'si mavjud emas. Shuning uchun `ReferenceError` qaytarayapti.
+Yuqoridagi misolda `n` o'zgaruvchisi `for` sikli uchun qayta yaratilayapti `let n = undefined;` va `n.a` orqali yaratilgan `n` o'zgaruvchisining `a` property'siga murojaat qilinayapti. Xolbuki, `n` o'zgaruvchisining `a` property'si mavjud emas. Shuning uchun `ReferenceError` qaytarilayapti.
 
 Yuqorida `let` o'zgaruvchisi haqida aytilgan barcha fikrlar `const` o'zgaruvchisi uchun ham o'rinlidir.
 
@@ -83,5 +83,6 @@ Yuqorida `let` o'zgaruvchisi haqida aytilgan barcha fikrlar `const` o'zgaruvchis
 ## Xulosa
 
 - `let` va `const` o'zgaruvchilar uchun ES6 da Temporal Dead Zone tushunchasi kiritilgan.
+- `var` o'zgaruvchisi uchun TDZ mavjud emas va unga qiymat berilmaganda qiymati `undefined` ga teng bo'ladi.
 - Bu maydonda o'zgaruvchining qiymati mavjud bo'lmaydi.
 - O'zgaruvchi uchun bu maydon unga tegishli scope boshlanishidan, o'zgaruvchiga qiymat berilgunga qadar davom etadi.
