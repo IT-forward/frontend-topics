@@ -6,10 +6,10 @@
 
 <ul>
     <li>
-        <b>Funksiyalar dastur ichida kodning takrorlanishini kamaytiradi</b> - Funktsiya sizga tez -tez ishlatiladigan kodlar blokini bitta komponentdan ajratib olish imkonini beradi. Endi siz bir xil kodni qayta-qayta nusxa ko'chirmasdan va skriptingizda xohlagan joyga ushbu funktsiyani chaqirib, xuddi shu vazifani bajarishingiz mumkin.
+        <b>Funksiyalar dastur ichida kodning takrorlanishini kamaytiradi</b> - Funktsiya sizga tez -tez ishlatiladigan kodlar blokini bitta komponentdan ajratib olish imkonini beradi. Endi siz bir xil koddan qayta-qayta nusxa ko'chirmasdan, skriptingizda xohlagan joyga ushbu funktsiyani chaqirib, xuddi shu vazifani bajarishingiz mumkin.
         </li>
     <li>
-        <b>Funksiyalar kodni saqlashni ancha osonlashtiradi</b> - Bir marta yaratilgan funktsiyani ko'p marta ishlatish mumkin, shuning uchun funktsiyaga kiritilgan har qanday o'zgarishlar bir nechta fayllarga tegmasdan avtomatik ravishda hamma joyda amalga oshiriladi.
+         <b>Funksiyalar kodni saqlashni ancha osonlashtiradi</b> - Bir marta yaratilgan funktsiyani ko'p marta ishlatish mumkin. Shuning uchun funktsiyaga kiritilgan har qanday o'zgarishlar bir nechta fayllarga tegmasdan, avtomatik ravishda hamma joyda amalga oshiriladi.
     </li>
     <li>
         <b>Funksiyalar xatolarni bartaraf etishni osonlashtiradi</b> - Agar dastur funktsiyalarga bo'linsa, xato yuzaga kelsa, siz qaysi funktsiyani va nima uchun qayerdan topishni bilasiz. Shunday qilib, xatolarni tuzatish ancha osonlashadi.
@@ -39,11 +39,11 @@ sayHello(); // 0utputs: Hello, welcome to this website!
 
 Funktsiya aniqlangandan so'ng, uni hujjatning istalgan joyidan chaqirish  mumkin, uning nomini yozib, yuqoridagi misolda sayHello () kabi qavslar to'plamini yozish orqali.
 
-**ESLATMA!:** Funktsiya nomi raqamdan emas, balki harfdan yoki pastki chiziqdan boshlanishi kerak, ixtiyoriy ravishda undan ko'p harflar, raqamlar yoki pastki chiziqlar qo'yiladi. 
+**ESLATMA!:** Funktsiya nomi raqamdan emas, balki harfdan yoki pastki chiziqdan boshlanishi kerak. Ixtiyoriy ravishda undan ko'p harflar, raqamlar yoki pastki chiziqlar qo'yiladi. 
 
 #### Funktsiyalarga parametrlarni qo'shish
 
- Parametrlar funktsiyadagi to'ldiruvchi o'zgaruvchilar kabi ishlaydi.Ular chaqiruv vaqtida funktsiyaga berilgan qiymatlar (argument sifatida tanilgan) bilan almashtiriladi.
+ Parametrlar funktsiyadagi to'ldiruvchi o'zgaruvchilar kabi ishlaydi. Ular chaqiruv vaqtida funktsiyaga berilgan qiymatlar (argument sifatida tanilgan) bilan almashtiriladi.
 
 Parametrlar qavslar ichidagi funktsiyaning birinchi qatoriga o'rnatiladi, masalan:
 
@@ -53,7 +53,7 @@ Parametrlar qavslar ichidagi funktsiyaning birinchi qatoriga o'rnatiladi, masala
 }
 ```
 
-Quyidagi misolda displaySum () funktsiyasi ikkita raqamni argument sifatida qabul qiladi, ushbu misolni brauzeringiz console lida sinab ko'rishingiz mumkin.
+Quyidagi misolda displaySum () funktsiyasi ikkita raqamni argument sifatida qabul qiladi. Ushbu misolni brauzeringiz console lida sinab ko'rishingiz mumkin.
 
 ```js
 // Defining function
