@@ -1,24 +1,24 @@
-# JavaScript funktsiyalari
+# JavaScript funksiyalari
 
-#### Funktsiya nima?
+#### Funksiya nima?
 
-**Funktsiya** - bu aniq vazifalarni bajaradigan va asosiy dasturda saqlanishi mumkin bo'lgan kodlar bloki. Funktsiyalarni ishlatishning ba'zi afzalliklari:
+**Funksiya** - bu aniq vazifalarni bajaradigan va asosiy dasturda saqlanishi mumkin bo'lgan kodlar bloki. Funksiyalarni ishlatishning ba'zi afzalliklari:
 
 <ul>
     <li>
-        <b>Funksiyalar dastur ichida kodning takrorlanishini kamaytiradi</b> - Funktsiya sizga tez -tez ishlatiladigan kodlar blokini bitta komponentdan ajratib olish imkonini beradi. Endi siz bir xil koddan qayta-qayta nusxa ko'chirmasdan, skriptingizda xohlagan joyga ushbu funktsiyani chaqirib, xuddi shu vazifani bajarishingiz mumkin.
+       <b>Funksiyalar dastur ichida kodning takrorlanishini kamaytiradi</b> - Funksiya sizga tez-tez ishlatiladigan kodlar blokini bitta komponentdan ajratib olish imkonini beradi. Endi siz bir xil koddan qayta-qayta nusxa ko'chirmasdan, skriptingizda xohlagan joyga ushbu funksiyani chaqirib, xuddi shu vazifani bajarishingiz mumkin.
         </li>
     <li>
-         <b>Funksiyalar kodni saqlashni ancha osonlashtiradi</b> - Bir marta yaratilgan funktsiyani ko'p marta ishlatish mumkin. Shuning uchun funktsiyaga kiritilgan har qanday o'zgarishlar bir nechta fayllarga tegmasdan, avtomatik ravishda hamma joyda amalga oshiriladi.
+         <b>Funksiyalar kodni saqlashni ancha osonlashtiradi</b> - Bir marta yaratilgan funksiyani ko'p marta ishlatish mumkin. Shuning uchun funksiyaga kiritilgan har qanday o'zgarishlar bir nechta fayllarga tegmasdan, avtomatik ravishda hamma joyda amalga oshiriladi.
     </li>
     <li>
-        <b>Funksiyalar xatolarni bartaraf etishni osonlashtiradi</b> - Agar dastur funktsiyalarga bo'linsa, xato yuzaga kelsa, siz qaysi funktsiyani va nima uchun qayerdan topishni bilasiz. Shunday qilib, xatolarni tuzatish ancha osonlashadi.
+        <b>Funksiyalar xatolarni bartaraf etishni osonlashtiradi</b> - Agar dastur funksiyalarga bo'linsa, xato yuzaga kelsa, siz qaysi funksiyani va nima uchun qayerdan topishni bilasiz. Shunday qilib, xatolarni tuzatish ancha osonlashadi.
     </li>
 </ul>
 
-#### Funktsiyani aniqlash va chaqirish
+#### Funksiyani aniqlash va chaqirish
 
-Funktsiyaning deklaratsiyasi funktsiya kalit so'zidan boshlanadi, keyin siz yaratmoqchi bo'lgan funktsiyaning nomi, so'ngra qavs, ya'ni **( )** va oxirigacha o'z funktsiyangiz kodini jingalak qavslar orasiga qo'ying **{ }**. Bu yerda funktsiyani e'lon qilishning asosiy sintaksisi:
+Funksiyani e'lon qilish funksiya kalit so'zidan boshlanadi, keyin siz yaratmoqchi bo'lgan funksiyaning nomi, so'ngra qavs, ya'ni **( )** va oxirigacha o'z funksiyangiz kodini figurali qavslar orasiga qo'ying **{ }**. Bu yerda funksiyani e'lon qilishning asosiy sintaksisi:
 
 ```js
     function functionName() {
@@ -34,18 +34,18 @@ function sayHello() {
 }
  
 // Funksiyani chaqirish (Calling function)
-sayHello(); // 0utputs: Hello, welcome to this website!
+sayHello(); // Natija: Hello, welcome to this website!
 ```
 
-Funktsiya aniqlangandan so'ng, uni hujjatning istalgan joyidan chaqirish  mumkin, uning nomini yozib, yuqoridagi misolda sayHello () kabi qavslar to'plamini yozish orqali.
+Funksiya aniqlangandan so'ng, uni hujjatning istalgan joyidan chaqirish  mumkin, uning nomini yozib, yuqoridagi misolda sayHello () kabi qavslar to'plamini yozish orqali.
 
-**ESLATMA!:** Funktsiya nomi raqamdan emas, balki harfdan yoki pastki chiziqdan boshlanishi kerak. Ixtiyoriy ravishda undan ko'p harflar, raqamlar yoki pastki chiziqlar qo'yiladi. 
+**ESLATMA:** Funksiya nomi raqamdan emas, balki harfdan yoki pastki chiziqdan boshlanishi kerak. Ixtiyoriy ravishda undan ko'p harflar, raqamlar yoki pastki chiziqlar qo'yiladi. 
 
-#### Funktsiyalarga parametrlarni qo'shish
+#### Funksiyalarga parametrlarni qo'shish
 
- Parametrlar funktsiyadagi to'ldiruvchi o'zgaruvchilar kabi ishlaydi. Ular chaqiruv vaqtida funktsiyaga berilgan qiymatlar (argument sifatida tanilgan) bilan almashtiriladi.
+ Parametrlar funksiyadagi to'ldiruvchi o'zgaruvchilar kabi ishlaydi. Ular chaqiruv vaqtida funksiyaga berilgan qiymatlar (argument sifatida tanilgan) bilan almashtiriladi.
 
-Parametrlar qavslar ichidagi funktsiyaning birinchi qatoriga o'rnatiladi, masalan:
+Parametrlar qavslar ichidagi funksiyaning birinchi qatoriga o'rnatiladi, masalan:
 
 ```js
     function functionName(parameter1, parameter2, parameter3) {
@@ -53,44 +53,44 @@ Parametrlar qavslar ichidagi funktsiyaning birinchi qatoriga o'rnatiladi, masala
 }
 ```
 
-Quyidagi misolda displaySum () funktsiyasi ikkita raqamni argument sifatida qabul qiladi. Ushbu misolni brauzeringiz console lida sinab ko'rishingiz mumkin.
+Quyidagi misolda displaySum () funksiyasi ikkita raqamni argument sifatida qabul qiladi. Ushbu misolni brauzeringiz console lida sinab ko'rishingiz mumkin.
 
 ```js
-// Defining function
+// Funksiyani e'lon qilish
 function displaySum(num1, num2) {
     var total = num1 + num2;
     alert(total);
 }
  
-// Calling function
-displaySum(6, 20); // 0utputs: 26
-displaySum(-5, 17); // 0utputs: 12
+// Funksiyani chaqirish
+displaySum(6, 20); // Natija: 26
+displaySum(-5, 17); // Natija: 12
 ```
 
-Siz xohlaganingizcha parametrlarni belgilashingiz mumkin. Ammo siz ko'rsatgan har bir parametr uchun funktsiyani chaqirganda unga tegishli argument yuborilishi kerak, aks holda uning qiymati aniqlanmagan bo'ladi. Keling, quyidagi misolni ko'rib chiqaylik:
+Siz xohlaganingizcha parametrlarni belgilashingiz mumkin. Ammo siz ko'rsatgan har bir parametr uchun funksiyani chaqirganda unga tegishli argument yuborilishi kerak, aks holda uning qiymati aniqlanmagan bo'ladi. Keling, quyidagi misolni ko'rib chiqaylik:
 
 ```js
-    // Defining function
+    // Funksiyani e'lon qilish
 function showFullname(firstName, lastName) {
     alert(firstName + " " + lastName);
 }
  
-// Calling function
-showFullname("Clark", "Kent"); // 0utputs: Clark Kent
-showFullname("John"); // 0utputs: John undefined
+// Funksiyani chaqirish
+showFullname("Clark", "Kent"); // Natija: Clark Kent
+showFullname("John"); // Natija: John undefined
 ```
 
-#### Funktsiya parametrlari uchun standart qiymatlar (ES6)
+#### Funksiya parametrlari uchun standart qiymatlar (ES6)
 
-ES6 yordamida endi siz funktsiya parametrlariga standart qiymatlarni belgilashingiz mumkin. Bu JavaScript da eng ko'p kutilgan xususiyatlardan biri. Mana bir misol:
+ES6 yordamida endi siz funksiya parametrlariga standart qiymatlarni belgilashingiz mumkin. Bu JavaScript da eng ko'p kutilgan xususiyatlardan biri. Mana bir misol:
 
 ```js
     function sayHello(name = 'Guest') {
     alert('Hello, ' + name);
 }
 
-sayHello(); // 0utputs: Hello, Guest
-sayHello('John'); // 0utputs: Hello, John
+sayHello(); // Natija: Hello, Guest
+sayHello('John'); // Natija: Hello, John
 ```
 ES6 dan oldin, bunga erishish uchun biz shunday yozishimiz kerak edi:
 
@@ -100,45 +100,45 @@ ES6 dan oldin, bunga erishish uchun biz shunday yozishimiz kerak edi:
     alert('Hello, ' + name);
 }
 
-sayHello(); // 0utputs: Hello, Guest
-sayHello('John'); // 0utputs: Hello, John
+sayHello(); // Natija: Hello, Guest
+sayHello('John'); // Natija: Hello, John
 ```
 Boshqa ES6 xususiyatlari haqida bilish uchun <a href="https://www.tutorialrepublic.com/javascript-tutorial/javascript-es6-features.php"> JavaScript ES6 xususiyatlari </a> bo'limiga qarang.
 
-#### Funktsiyadan qiymatlarni qaytarish
+#### Funksiyadan qiymatlarni qaytarish
 
-Return buyrug'i yordamida funktsiya natijada funktsiyani chaqirgan skriptga qiymatni qaytarishi mumkin. Qiymat har qanday turga ega bo'lishi mumkin, shu jumladan massivlar va ob'ektlar.
+Return buyrug'i yordamida funksiya natijada funksiyani chaqirgan skriptga qiymatni qaytarishi mumkin. Qiymat har qanday turga ega bo'lishi mumkin, shu jumladan massivlar va obyektlar.
 
-Return odatda funktsiyaning oxirgi satri sifatida jingalak qavs yopilishidan oldin qo'yiladi va uni quyidagi misolda ko'rsatilgandek nuqta vergul bilan tugatadi.
+Return odatda funksiyaning oxirgi satri sifatida figurali qavs yopilishidan oldin qo'yiladi va uni quyidagi misolda ko'rsatilgandek nuqta vergul bilan tugatadi.
 
 ```js
-    // Defining function
+    // Funksiyani e'lon qilish
 function getSum(num1, num2) {
     var total = num1 + num2;
     return total;
 }
  
-// Displaying returned value
-alert(getSum(6, 20)); // 0utputs: 26
-alert(getSum(-5, 17)); // 0utputs: 12
+// Qaytgan qiymatni ekranda ko'rsatish
+alert(getSum(6, 20)); // Natija: 26
+alert(getSum(-5, 17)); // Natija: 12
 ```
-Funktsiya bir nechta qiymatlarni qaytarib bera olmaydi. Biroq, siz quyidagi misolda ko'rsatilgandek, bir qator qiymatlarni qaytarish orqali shunga o'xshash natijalarga erishishingiz mumkin.
+Funksiya bir nechta qiymatlarni qaytarib bera olmaydi. Biroq, siz quyidagi misolda ko'rsatilgandek, bir qator qiymatlarni qaytarish orqali shunga o'xshash natijalarga erishishingiz mumkin.
 
 ```js
-    // Defining function
+    // Funksiyani e'lon qilish
 function divideNumbers(dividend, divisor){
     var quotient = dividend / divisor;
     var arr = [dividend, divisor, quotient];
     return arr;
 }
  
-// Store returned value in a variable
+// Qaytgan qiymatni o'zgaruvchida saqlash
 var all = divideNumbers(10, 2);
  
-// Displaying individual values
-alert(all[0]); // 0utputs: 10
-alert(all[1]); // 0utputs: 2
-alert(all[2]); // 0utputs: 5
+// Alohida qiymatlarni ekranda ko'rsatish
+alert(all[0]); // Natija: 10
+alert(all[1]); // Natija: 2
+alert(all[2]); // Natija: 5
 ```
 
 ### Xulosa
